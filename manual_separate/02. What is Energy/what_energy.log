@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.7)  7 JAN 2026 16:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.7)  8 JAN 2026 11:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -900,7 +900,7 @@ Package rerunfilecheck Info: File `what_energy.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  18666 strings out of 467871
- 302985 string characters out of 5428435
+ 303135 string characters out of 5428435
  776745 words of memory out of 5000000
  47089 multiletter control sequences out of 15000+600000
  664421 words of font info for 116 fonts, out of 8000000 for 9000
