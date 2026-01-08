@@ -1,0 +1,150 @@
+\documentclass[english,twoside]{article}
+
+\input{../labmanual_formatting_commands} %all general latex packages, commands, and definitions now here.
+
+\begin{document}
+
+\Lab{8}{Current and Resistors}
+
+\renewcommand{\arraystretch}{1.5}
+\setlength{\arrayrulewidth}{0.4mm}
+\setlength{\tabcolsep}{10pt}
+
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+\makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
+
+
+\textbf{Driving Question}
+
+When electricity flows through an object or material, charged particles get a push from the potential difference, or voltage, applied to the material. In many cases, the more voltage there is, the more flow, or current, there is.
+ 
+The flow of charged particles is different from the flow of water in a river or pipe. Typically, all the material in a river or pipe moves together and only rubs against the riverbed or the walls of the pipe. But charged particles often move through solid materials, such as copper, carbon, and tungsten. While moving things through solids may seem impossible, electrons are extremely tiny and can move among the atoms that make up a solid. In fact, at the scale of an electron, an atom is mostly empty space.
+
+However, electrons moving through a solid material cannot move as swiftly as they would through a truly empty space, especially since the nuclei of the atoms stay still instead of going with the flow. The movement of electrons is so hampered by the structure of a solid material that they move at speeds on the order of mere centimeters per second. 
+
+Sometimes it is useful to allow only small currents, and objects called resistors are used in circuits to decrease electron flow by specific amounts. In this experiment, you will investigate how different resistors in a circuit affect voltage and current. Resistance is measured in ohms (?).
+
+\textbf{Objectives}
+\begin{itemize}
+	\item Measure current
+	\item Measure voltage
+	\item Explore the relationship between voltage, resistance, and current
+\end{itemize}
+
+\textbf{Materials}
+\begin{itemize}
+	\item Data collection system
+	\item Current sensor
+	\item Voltage sensor
+	\item 15-$\Omega$, 20-$\Omega$, 30-$\Omega$, 39-$\Omega$, and 51-$\Omega$ resistors		
+	\item Wires with clips ($\times 3$)
+	\item Power supply 
+	\item Magnetic compass	
+\end{itemize}
+
+\newpage
+\textbf{Consider}
+
+\begin{enumerate}
+	\item Connect three wires together to make one long wire. Connect the ends of the long wire to the two batteries in the holder to make a complete circuit. Break the circuit by disconnecting the wires at the clips. Place the magnetic compass under one of the wires in the circuit. Align that wire with the compass needle. Close the circuit by reconnecting the wires at the clips and observe the compass needle. Break the circuit again by disconnecting the wires and leave the circuit open. Write your observations.
+\answerspace{3.0in}
+
+	\item Connect three wires together to make one long wire. Connect the ends of the long wire to the two batteries in the holder and one of the resistors to make a complete circuit. Break the circuit by disconnecting the wires at the clips. Place the magnetic compass under one of the wires in the circuit. Align that wire with the compass needle. Close the circuit by reconnecting the wires at the clips and observe the compass needle. Break the circuit again by disconnecting the wires and leave the circuit open.
+
+Putting a compass needle by a wire can indicate whether there is current present in the wire or not. Make a conjecture about the effect of resistance on the current in the wire. Write your observations.
+\answerspace{3.0in}
+\end{enumerate}
+\newpage
+\textbf{Investigate}
+\begin{enumerate} 
+	\item \item Open \textit{SPARKvue} and build a page with two graphs.	
+	\item Connect the wireless voltage and current sensors. 
+	\item Place Current (mA) on the $y$-axis on the first graph and Voltage (V) on the $y$-axis on the second graph.
+	\item Connect the black ($-$) source terminal of the current sensor to one end of a resistor.
+	\item Connect the voltage sensor across the resistor (one lead to each end).
+	\item Connect the $+$ side of the power supply to the red ($+$) source terminal of the current sensor.
+	\item Leave the circuit open by not yet connecting the $-$ side of the power supply. Double-check all other connections.
+	\item Start data collection.
+	\item Connect the $-$ side of the of power supply to the free end of the resistor. (Current will now flow.)
+	\item Measure the voltage and current and record the values in the table below.
+	\item When finished, open the circuit by disconnecting the power supply (remove one wire).
+	\item Replace the resistor with a different one and repeat the steps above.
+	\item Continue until you have tested all resistors.
+\end{enumerate}
+
+\begin{center}
+\begin{table}[h] 
+\centering{
+\begin{tabular}{| M{4.5cm} | M{4.5cm} | M{4.5cm} |} 
+ \hline
+ Resistance ($\Omega$) & Voltage (V) & Current (mA) \\ \hline
+ & & \\[15pt] \hline
+ & & \\[15pt] \hline
+ & & \\[15pt] \hline
+ & & \\[15pt] \hline
+ & & \\[15pt] \hline
+ & & \\[15pt] \hline
+
+\end{tabular}
+}
+\end{table}
+\end{center} 	 
+\newpage
+\textbf{Analysis Questions}
+\begin{enumerate}
+	\item Make a graph of voltage (V) vs. resistance ($\Omega$). Sketch the graph below.
+\answerspace{3.5in}
+	\item Predict what the graph would look like for higher resistor values such as 200-$\Omega$, 500-$\Omega$, or 1000-$\Omega$.
+	\answerspace{3.5in}
+	\item How does the resistor value affect the measured voltage of the circuit?
+	\answerspace{2.5in}
+	\item Make a graph of current (mA) vs. resistance ($\Omega$). Sketch the graph below.
+	\answerspace{3.5in}
+	\item Predict what the graph would look like for higher resistor values such as 200-$\Omega$, 500-$\Omega$, or 1000-$\Omega$.
+	\answerspace{3.0in}
+	\item How does the resistor value affect the measured current of the circuit?
+	\answerspace{2in}
+\end{enumerate}
+
+\textbf{Extend}
+\begin{enumerate}
+	\item Investigate why the measured voltage does not remain constant for this experiment, despite the fact that the batteries you used were the same for the entire experiment. Report on your findings.
+	\item Look up Ohm's law and apply it to your data to calculate experimental values for the resistors you used. Compare your calculated values to the given values for each resistor. Account for any differences you discover.
+	\item Investigate the voltage and current for a circuit in which you combine two or more resistors in series. Do the same for a circuit in which you combine two or more resistors in parallel. Are the results what you expected? 
+\end{enumerate}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

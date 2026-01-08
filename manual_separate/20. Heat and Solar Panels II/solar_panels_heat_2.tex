@@ -1,0 +1,148 @@
+\documentclass[english,twoside]{article}
+
+\input{../labmanual_formatting_commands} %all general latex packages, commands, and definitions now here.
+
+\begin{document}
+
+\Lab{20}{Heat and Solar Panels II}
+
+\renewcommand{\arraystretch}{1.5}
+\setlength{\arrayrulewidth}{0.4mm}
+\setlength{\tabcolsep}{10pt}
+
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+\makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
+
+
+\textbf{Driving Question}
+
+Photovoltaic power generation is becoming a cost-efficient method of electricity generation throughout the world. Many parameters affect the power output of a PV panel. To predict the power output of a PV system in different geographical locations and climates, engineers must understand how a PV panel responds to exposure in a range of different temperatures. Engineers have designed a variety of methods to effectively control the temperature of a solar panel to increase its efficiency, yet it often requires unique solutions for the many different environments and applications in which solar power is used. 
+
+When designing a solar PV power plant, engineers determine the expected power output of the entire plant. To do this, they must consider all the factors that affect the efficiency of the PV panels and electrical equipment over the life of the power plant. Let's explore some of those factors.
+
+If engineers installed the exact same power plant in Las Vegas, NV, and Fargo, ND, do you think it would produce the exact same amount of power over the course of a year? (Answer: No) Would it produce more or less power and what are some of the factors that would influence the power generation of the PV plants?
+
+Well, for starters the collector slopes would be different for each latitude. If not set correctly, the panels lose efficiency because they would not be facing the optimal direction. Another factor is the weather. The weather in Fargo is extremely different than the weather in Las Vegas. Las Vegas is in a hot and sunny, desert climate while Fargo is covered in snow many months of the year. We saw that that snowy and cloudy days result in the PV panels producing less power, but what about a sunny day in Fargo vs. a sunny day in Las Vegas? How do you think the ambient temperature (surrounding environmental temperature) of the air would affect the efficiency of the solar panels?
+
+The temperature of a PV cell is directly influenced by both the ambient temperature and amount of solar radiation hitting the panel. The same PV panels installed in Fargo will be colder than the panels in Las Vegas, but is this a good or bad thing? Let's do an experiment to find out!
+
+\textbf{Materials}
+\begin{itemize}
+	\item Temperature sensor
+	\item Current sensor with red and black banana plugs
+	\item Voltage sensor with red and black banana plugs
+	\item Solar panel 
+	\item A bucket of ice water
+	\item Adjustable lamp with 150-W incandescent bulb 
+	\item Ruler or meter stick
+	\item Tape
+	\item Ziploc bags 
+\end{itemize}
+
+\textbf{Investigate}
+\begin{enumerate}
+	\item Open \textit{SPARKvue} and build a page with a Table display.
+	\item Connect the temperature, current, and voltage sensors. 
+	\item Extend the table to show three columns. Voltage (V), Current (mA), and Temperature ($^\circ$C) on the table. (Note: You will only use the Current and Temperature readings for the first part of the lab.) 
+	\item Tape the solar panel holder to the table.
+	\item Connect the current and voltage sensors to the solar panel.
+	\item Set the lamp horizontally on the table 20 cm from the panel holder.
+	%{\par\centering \includegraphics{solar_panels/solar_panel_heat.png} \par}
+	\item Prepare two 5-cm pieces of tape.  
+	\item Complete Steps 8--10 as quickly as possible. Follow these steps to record the room temperature, current and voltage at ambient conditions and fill in the table. The panel is at ambient conditions when it is at the typical room air temperature, so take these measurements quickly before the lamp starts to heat the panel
+	\item Measure the room's (ambient) temperature with the temperature sensor. 
+	\item Turn the lamp on and measure the room's temperature, $T$, the current, $I$, and the voltage, $V$, under these ambient conditions. 
+	\item Calculate the solar panel's power under ambient these conditions.
+	\item Detach the leads from the panel, insert it in the Ziploc bag and bring it to the bucket filled with ice-water. Avoid contact between electrical parts and water.
+	\item Submerge the PV panel into the bucket of ice water for 10 minutes. Tips: Do not hold the panel by the wires! Do not let the wires get wet! Hold the panel by its edges and not by its leads, because the leads will pull out!
+	\item While you wait, change the Sampling Rate to 30 s.
+	\item Remove the panel from the ice water and quickly dry it with a towel. Return to the desk and quickly attach the leads of the panel to the voltage sensor.
+	\item When the circuit is connected, place the panel back under the lamp in the position marked by the tape. Immediately record the voltage. (Assume the first voltage value to be taken at $0^\circ$C.)
+	\item Record the voltage (in 30 second intervals) for 15 minutes or until the voltage stops significantly changing. 
+	\item Calculate the power output of the panel at each of the time intervals. Graph power output vs. time.
+\end{enumerate}
+\newpage
+\textbf{Data Collection}
+
+Record the measurements from the experiment in the tables, below. Measure the voltage and current under ambient conditions before the ice bath. Calculate the power at each time after the experiment is completed using the electrical power equation. Use the current measured at ambient conditions to calculate power for all times.
+
+\begin{center}
+\begin{tabular}{ | M{4.0cm} | M{4.0cm} | }
+ \hline
+ \multicolumn{2}{|c|}{Ambient Conditions} \\ \hline
+ Temperature, $T$ ($^\circ$C) & \\ \hline
+ Current, $I$ (A) & \\ \hline
+Voltage, $V$ (V) & \\ \hline
+Power, $P$ (W) & \\ \hline
+\end{tabular}
+\end{center}
+
+
+\begin{center}
+\begin{tabular}{ | M{0.8cm} | M{1.2cm} |  M{1.2cm} || M{0.8cm} | M{1.2cm} | M{1.2cm} |}
+ \hline
+ Time (min) & Voltage (V) & Power (W) & Time (min) & Voltage (V) & Power (W)\\ \hline
+ 0 & & & 8.0 & & \\ \hline
+0.5 & & & 8.5 & & \\ \hline
+1.0 & & & 9.0 & & \\ \hline
+1.5 & & & 9.5 & & \\ \hline
+2.0 & & & 10.0 & & \\ \hline
+2.5 & & & 10.5 & & \\ \hline
+3.0 & & & 11.0 & & \\ \hline
+3.5 & & & 11.5 & & \\ \hline
+4.0 & & & 12.0 & & \\ \hline
+4.5 & & & 12.5 & & \\ \hline
+5.0 & & & 13.0 & & \\ \hline
+5.5 & & & 13.5 & & \\ \hline
+6.0 & & & 14.0 & & \\ \hline
+6.5 & & & 14.5 & & \\ \hline
+7.0 & & & 15.0 & & \\ \hline
+7.5 & & & 15.5 & & \\ \hline
+\end{tabular}
+\end{center}
+
+\newpage
+Plot the power with respect to time in the graph below.
+
+{\par\centering \includegraphics[width=0.8\linewidth]{graph_power_time.png} \par}
+
+
+\textbf{Analyze}
+\begin{enumerate}
+	\item Is the panel more efficient when it is colder or hotter?
+	\answerspace{1.5in}
+	\item Predict the power output of the panel if left in these experimental conditions indefinitely.
+	\answerspace{2.0in}
+	\item The temperature coefficient $T_c$ of a solar panel tells us how much the panel's voltage changes for each degree of temperature change. A negative temperature coefficient means that the voltage increases when the panel gets colder and decreases when it gets hotter. This helps us understand how temperature affects solar panel performance in real-world conditions.
+
+In this experiment, we measured the voltage first at room temperature and again after cooling the panel in ice water. From these measurements, calculate the panel's temperature coefficient using
+\begin{equation*}
+	T_c = \frac{V_\text{ice} - V_\text{ambient}}{T_\text{ice} - T_\text{ambient}} ,
+\end{equation*}
+where $V_\text{ice}$ represents the first voltage measurement taken after removing the panel from the ice bath and $T_\text{ice}$ represents the temperature of the solar panel at that time. Since we did not make a direct measurement of the panel's temperature, assume that $T_\text{ice} = 0^\circ$C.
+
+Note: In the following exercises, we will assume that the temperature coefficient remains constant over the range of temperatures given. 
+	\answerspace{1.5in}
+	\item What are the units of the temperature coefficient?
+	\answerspace{1.0in}
+	\item Using the temperature coefficient you found, calculate the temperature of the panel at the time when you recorded the last voltage reading.
+	\answerspace{2.0in}
+	\newpage
+	\item What would the power output of the panel be at the following temperatures? Calculate the power output.
+\begin{center}
+\begin{tabular}{ | M{4.0cm} | M{2.0cm} | M{2.5cm} | M{2.5cm} |}
+ \hline
+ Description & Temperature ($^\circ$C) & Voltage (V) & Power (W) \\ \hline
+ Brrrrrr! & -100 & & \\ \hline
+Fargo, ND & -28.9 & & \\ \hline
+Water freezes & 0 & & \\ \hline
+Las Vegas, NV & 41 & & \\ \hline
+Water boils & 100 & & \\ \hline
+\end{tabular}
+\end{center}
+	\item Calculate the difference in the power output of the panel for the temperatures in Las Vegas and Fargo. What would be the difference in power output if there were a solar PV power plant with 10,000 of these panels installed?
+\end{enumerate}
+
+\end{document}

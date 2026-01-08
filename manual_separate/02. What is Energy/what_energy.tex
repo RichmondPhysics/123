@@ -1,0 +1,184 @@
+\documentclass[english,twoside]{article}
+
+\input{../labmanual_formatting_commands} %all general latex packages, commands, and definitions now here.
+
+\renewcommand{\arraystretch}{1.5}
+\setlength{\arrayrulewidth}{0.2mm}
+\setlength{\tabcolsep}{10pt}
+
+\begin{document}
+
+\Lab{2}{What is Energy?}
+
+\makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
+
+\textbf{Driving Question}
+
+Energy is involved in everything that happens, from the tiniest insect moving one antenna to a massive eruption of a volcano that spreads ash around the globe. Energy is constantly being transferred and transformed. If you use a microwave oven to heat your food, electromagnetic energy is transferred into the food and transformed into thermal energy. When you eat the food, your body turns the chemical energy in the food into a different form of chemical energy. If you kick a ball, you transfer some of the energy from your body into the ball.
+
+There are two broad categories of energy: potential and kinetic. Potential energy is energy that is stored. Forms of potential energy include chemical, gravitational, elastic, and nuclear. Kinetic energy is the energy of motion. Electrical, radiant, thermal, and sound energy are all examples of kinetic energy.
+
+\begin{figure}[h]
+{\par\centering \includegraphics{forms_energy.png} \par}
+\caption{Adapted with permission from The NEED Project, \url{www.need.org}}
+\end{figure}
+ 
+Electrical energy is a convenient form of energy to transmit, sell, and use. Most electrical energy in the United States is generated from energy stored in fossil fuels, such as natural gas and coal. While these sources are forms of potential energy, they do not necessarily contain the same amount of energy per volume. To make it more complicated, different fuels are sold in different units of volume. We can use equations to calculate energy content and compare energy sources. 
+
+For example, if your house is heated with natural gas, you get a bill that tells them how much natural gas in cubic feet (ft$^3$) was used. If your friend's house is heated with a furnace that uses heating oil, your friend gets a bill that tells them how many gallons of oil were used. Imagine that your family used 14,300 ft$^3$ of natural gas last month, and that in the same month, your friend's family used 110 gallons of heating oil. Who used more energy to heat their home? You will answer this question in the Preliminary Questions.
+
+In order to be able to compare energy sources more easily, conversion into measurements of a common unit is necessary. The SI unit for energy is the joule (J). In this experiment, you will determine the energy content in J/g of different fuels. You will do this by burning a known mass of the fuel and calculating the heat transferred to a known mass of water in a can. If you measure the initial and final temperatures, the energy transferred can be calculated using the equation
+\begin{equation}
+Q  =  m c \Delta T ,
+\end{equation} 
+where $Q$ is the heat energy absorbed (in J), $\Delta T$ is the change in temperature (in $^\circ$C), $m$ is the mass (in g), and $c$ is the  specific heat capacity (4.18 J/g$^\circ$C for water). Dividing the resulting energy value by grams of fuel burned gives the energy content per unit of mass.
+
+\textbf{Objectives}
+
+\begin{itemize}
+\item Identify the units that are used to measure energy.
+\item Determine the energy content of fuels by mass.
+\end{itemize}
+
+\textbf{Materials}
+
+\begin{itemize}
+\item Data collection system
+\item Fast probe temperature sensor
+\item Safety goggles
+\item 50 mL graduated cylinder
+\item Ring stand and 10 cm (4'') ring
+\item Utility clamp 
+\item Fuel samples (candle and gel chafing fuel)
+\item Balance (0.01g precision)
+\item Matches
+\item Small can
+\item Ice water
+\item Pencil
+\item Stirring rod
+\end{itemize}
+
+\textbf{Consider}
+
+\begin{enumerate}
+ 	\item List activities in your life that rely on fossil fuels.
+\answerspace{1.8in}
+
+ 	\item What energy sources are used to generate electricity and heat in your region? 
+\answerspace{1.8in}
+
+	\item Are renewable fuel sources available in your region? If yes, what options are available? 
+\answerspace{1.8in}
+
+	\item You were presented with a problem in the introduction to this experiment. There are two households that use different types of fuel for heating. Last month, Household A (your house) used 14,300 ft$^3$ of natural gas and Household B (your friend's house) used 110 gallons of heating oil. Use the information below to determine which household used the most energy. 
+
+Note: 1 ft$^3$ of natural gas contains $1.08 \times 10^6$ J and 1 gallon of heating oil contains $1.46 \times 10^6$ J
+
+\answerspace{1.8in}
+\end{enumerate}
+
+\textbf{Investigate}
+
+\begin{enumerate}
+	\item Obtain and wear goggles. 
+	\item Open \textit{SPARKvue} and build a page with a graph display.
+	\item Connect the temperature probe. To do so, click the Hardware Setup icon at the bottom-right of the page, select the analog channel that the probe is connected to, and select Temperature Sensor (Stainless Steel). 
+	\item Place Temperature on the $y$-axis. 
+	\item Measure the initial mass of the candle or gel chafing fuel and record the value in Table \ref{table_1}.
+
+\noindent
+\begin{minipage}[t]{0.50\textwidth}
+  \vspace{0pt}
+	\item Set up the equipment (see Figure \ref{what_energy_setup}).
+  \begin{enumerate}[label=(\alph*)]
+    \item Measure the mass of the empty can and record the value in Table \ref{table_1}.
+    \item If you are using a candle as your fuel source, place 50 mL of cold water into the can. If you are using gel chafing fuel, place 100 mL of cold water in the can.
+    \item Measure the mass of the can plus water and record the value in Table \ref{table_1}.
+    \item Use a 10 cm ring and a pencil through the can to suspend the can about 5 cm above the candle or chafing fuel.
+    \item Use the utility clamp to suspend the temperature sensor in the water. The temperature sensor should not touch the bottom or sides of the can.
+  \end{enumerate}
+		\item Start data collection. Monitor temperature for about 10 seconds and record the initial temperature of the water in Table \ref{table_1}. Light the gel chafing fuel or candle. Heat the water until the temperature reaches about $35^\circ$C and then extinguish the flame. 
+
+Caution: Keep hair and clothing away from an open flame.
+\end{minipage}\hfill
+\begin{minipage}[t]{0.40\textwidth}
+  \vspace{0pt}
+  \centering
+  \includegraphics[width=0.70\linewidth]{what_energy_setup.png}
+  \captionof{figure}{Experimental setup}
+  \label{what_energy_setup}
+\end{minipage}
+	
+	\item Stir the water with a stirring rod until the temperature stops rising. Record the final temperature (round to the nearest $0.1^\circ$C) in Table \ref{table_1}.
+	\item A graph of temperature vs. time is displayed. To examine the data pairs on the displayed graph, tap any data point. Confirm the initial and maximum values you recorded earlier.
+	\item Measure the final mass of the candle or gel chafing fuel and record the value in Table \ref{table_1}.
+	\item Repeat data collection using a different fuel. Start with a new volume of cold water.
+\end{enumerate}
+
+ 
+\textbf{Processing the Data}
+
+\begin{enumerate}
+	\item Calculate the change in water temperature, $\Delta T$, for each sample by subtracting the initial temperature from the final temperature. Record your answers in Table \ref{table_1}.
+   
+	\item Calculate the mass of the water heated for each sample. Subtract the mass of the empty can from the mass of the can plus water. Record your answers in Table \ref{table_1}.
+	
+	\item Use the results to determine the heat energy gained by the water (in J). To do so, use the equation
+\begin{equation*}
+	Q  =  m c \Delta T
+\end{equation*}
+where $Q$ is the heat energy absorbed (in J), $\Delta T$ is the change in temperature (in $^\circ$C), $m$ is the mass (in g), and $c$ is the specific heat capacity (4.18 J/g$^\circ$C for water). Record your answers in Table \ref{table_1}.
+
+	\item Calculate the mass of fuel burned. Subtract the final mass from the initial mass. Record your answers in Table \ref{table_1}.
+
+	\item Use the results to calculate the energy content (in J/g) of the fuel samples. Record your answers in Table \ref{table_1}.
+
+	\item Obtain the results of other groups and create a table with the compiled data.
+\end{enumerate}
+
+
+
+\begin{table}[h!]
+	\centering
+	\refstepcounter{table}
+	\label{table_1}
+	\begin{tabular}{ | p{5.5cm} | >{\centering\arraybackslash}p{2.5cm} | >{\centering\arraybackslash}p{2.5cm} | }
+		\hline
+		\multicolumn{3}{|c|}{Table \thetable} \\ \hline
+		& Candle & Gel chafing fuel \\ \hline
+		Initial mass of fuel (g) & & \\[15pt] \hline
+		Final mass of fuel (g) & & \\[15pt] \hline
+		Mass of fuel burned (g) & & \\[15pt] \hline
+		Mass of empty can (g) & & \\[15pt] \hline
+		Mass of can plus water (g) & & \\[15pt] \hline
+		Mass of water (g) & & \\[15pt] \hline
+		Initial water temperature ($^\circ$C) & & \\[15pt] \hline
+		Final water temperature ($^\circ$C) & & \\[15pt] \hline
+		Change in water temperature ($^\circ$C) & & \\[15pt] \hline
+		Energy content (J/g) & & \\[15pt] \hline
+	\end{tabular}
+\end{table}
+
+\textbf{Analysis Questions}
+
+\begin{enumerate}
+	\item Which of the fuels you tested has the greatest energy content?
+	\answerspace{1.0in}
+
+	\item Natural gas has an energy content of 53,600 J/g. Heating oil has an energy content of 46,200 J/g. How do the energy content values for these two types of fossil fuels compare to the energy content values that you determined?
+	\answerspace{2.0in}
+
+	\item In addition to energy content, what are at least two other factors that might be important in choosing a fuel?
+	\answerspace{3.0in}
+\end{enumerate}
+
+\textbf{Extend}
+
+\begin{enumerate}
+	\item Research accepted values for the energy content of the fuels you tested in this experiment. Account for the differences that you find between the accepted values and the values you determined.
+	\answerspace{2.5in}
+
+	\item Research accepted values for the energy content of other common energy sources. How do they compare to the fuels you studied in this experiment and to natural gas and heating oil? If you were designing a heating system for a house, what energy source would you use? Take into consideration cost and availability.
+\end{enumerate}
+
+\end{document}

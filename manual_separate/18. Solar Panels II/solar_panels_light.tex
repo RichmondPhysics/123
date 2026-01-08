@@ -1,0 +1,130 @@
+\documentclass[english,twoside]{article}
+
+\input{../labmanual_formatting_commands} %all general latex packages, commands, and definitions now here.
+
+\begin{document}
+
+\Lab{18}{Light and Solar Panels}
+
+\renewcommand{\arraystretch}{1.5}
+\setlength{\arrayrulewidth}{0.4mm}
+\setlength{\tabcolsep}{10pt}
+
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+\makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
+
+\textbf{Driving Question}
+
+How does light power and distance affect solar panel output?
+If you could zoom in on a beam of light, you would see countless tiny particles called photons, moving in a wave-like pattern.
+
+\begin{center}
+\includegraphics{flashlight.png}
+\end{center}
+
+Photons carry electromagnetic energy from one place to another. When a photon has enough energy, it can knock electrons free from atoms in a solar cell. These free electrons can then be collected to create an electric current, which can either be used immediately to power devices or stored in batteries for later use.
+
+The power of a device is a measure of how quickly it does work or transfers energy. Power is measured in watts (W). If a certain amount of energy is transferred slowly, the power is low. If the same energy is transferred quickly, the power is high. In this lab, we will explore how the intensity of light and the distance from the light source affect the power output of a solar panel.
+
+\textbf{Materials}
+\begin{itemize}
+	\item Voltage sensor with red and black banana plug leads
+	\item Solar panel with toothpicks taped behind center line
+	\item Meter stick
+	\item Pencil
+	\item Tape
+	\item Flash light
+	\item Solar panel holder from previous activity
+	\item Adjustable lamp with bulb of any wattage (At least two different wattage bulbs must be available for student use. Bulbs must be the same type; either use all CFL or all incandescent bulbs)
+\end{itemize}
+
+\textbf{Consider}
+\begin{enumerate}
+	\item Predict the change in voltage produced when a light source moves farther away from the panel:
+	\begin{enumerate}[A.]
+		\item Voltage will increase
+		\item Voltage will decrease
+		\item Voltage will not change
+	\end{enumerate}
+\newpage
+	\item Which allows the highest number of photons to reach you?
+	\begin{enumerate}[A.]
+		\item A walk in a forest
+		\item A day at the movies
+		\item A day in a museum
+		\item A nap on a sunny beach
+	\end{enumerate}
+	\item Predict the relationship between light power (bulb wattage) and the voltage produced by a solar panel:
+	\begin{enumerate}[A.]
+		\item Higher light power produces higher panel voltage
+		\item Higher light power produces lower panel voltage
+		\item Light power has no effect on panel voltage
+	\end{enumerate}
+\end{enumerate}
+
+\textbf{Investigate}
+\begin{enumerate}
+	\item Open \textit{SPARKvue} and build a page with a graph. 
+	\item Connect the voltage sensor. 
+	\item Work in a minimum $3 \times 3$ m space.
+	\item Mark the following distances in a straight line: 0 m, 0.5 m, 1 m, 1.5 m, 2 m.
+	\item Place the solar panel in the holder you built in a previous activity. Rotate the cell to $90^\circ$. Line up the cell at 0 m as shown.
+
+{\par\centering \includegraphics[width=0.4\linewidth]{light_solar_panel.png} \par}
+
+	\item Place the lamp at 0.5 m, shining towards the panel as shown.
+	\item Insert banana plug leads into the sensor if necessary. Use red for (+) and black for (-). Use the alligator clips to attach the solar panel wires to the voltage sensor. Match colors.
+	\item Enter the bulb wattage for Run 1 in Table 1.
+
+\begin{center}
+\begin{tabular}{ | M{1.5cm} | M{3.5cm} |}
+ \hline
+ \multicolumn{2}{|c|}{Table 1: Bulb Power} \\ \hline
+ Run \# & Bulb Power (W) \\ \hline
+ 1 &  \\[15pt] \hline
+ 2 &  \\[15pt] \hline
+\end{tabular}
+\end{center}
+
+	\item Turn on the lamp. Turn off all classroom lights, close doors, and cover windows if possible. Let the lamp warm up for 1 minute.
+ 	\item Start collecting data. Measure voltage at each distance for Run 1. Record results in Table 2. Avoid touching the hot bulb.
+
+\begin{center}
+\begin{tabular}{ | M{3.0cm} | M{3.5cm} | M{3.5cm} |}
+ \hline
+ \multicolumn{3}{|c|}{Table 2: Voltage at Increasing Light Distance} \\ \hline
+ Distance (m) & Voltage (V), Run 1 & Voltage (V), Run 2 \\ \hline
+ 0.5 & & \\[15pt] \hline
+ 1.0 & & \\[15pt] \hline
+1.5 & & \\[15pt] \hline
+2.0 & & \\[15pt] \hline
+\end{tabular}
+\end{center}
+	\item Stop collecting data after recording voltage at 2 m. Turn off the lamp and let it cool for a few minutes.
+	\item Trade your lamp with a group that used a different bulb wattage. Enter wattage for Run 2 in Table 1.
+	\item Turn on the new lamp. Let it warm up for 1 minute.
+	\item Start collecting data. Measure voltage at each distance for Run 2. Record results in Table 2.
+	\item Stop collecting data.
+\end{enumerate}
+
+\textbf{Analyze}
+\begin{enumerate}
+	\item How does light distance affect voltage produced? Does this match your prediction? Support your answer with data.
+	\answerspace{3.0in}
+	\item How does bulb wattage affect voltage produced? Does this match your prediction? Support your answer with data.
+	\answerspace{3.0in}
+ 	\item What happens to the number of photons that land on the solar panel as you move the light farther away from the solar panel?
+	\answerspace{3.0in}
+	\item Why is it important to maximize the number of photons that land on a solar panel?
+	\answerspace{3.0in}
+\end{enumerate}
+ 
+\textbf{Extend}
+
+\begin{enumerate}
+	\item The sun is on average $1.5 \times 10^{11}$ meters from Earth. To give you an idea of how big that number is, you would need to eat over 450 pieces of candy every second of every day for over 10 years to eat a total of $1.5 \times 10^{11}$ pieces of candy! Write a testable question to determine if changing solar panel distance from the sun has an impact on voltage produced. Design and conduct an experiment to answer your testable question.
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,148 @@
+\documentclass[english,twoside]{article}
+
+\input{../labmanual_formatting_commands} %all general latex packages, commands, and definitions now here.
+
+\begin{document}
+
+\Lab{7}{Voltage and Circuits}
+
+\renewcommand{\arraystretch}{1.5}
+\setlength{\arrayrulewidth}{0.4mm}
+\setlength{\tabcolsep}{10pt}
+
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+\makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
+
+
+\textbf{Driving Question}
+
+You have used electricity throughout your life, but do you know what it is? Electricity can be the sparks and crackling when clothing is pulled apart, and it can be lightning during a storm. It can also be channeled through wires and put to work turning fans, toasting bread, lighting lamps, and connecting you to the world over television, the internet, and phones. 
+
+The particles that make up atoms have a property known as charge. It is the presence and motion of these charged particles that gives rise to the phenomenon known as electricity. While we cannot see the charged particles themselves, we are able to investigate how they behave in various devices and materials.
+
+The moving particles in an atom are in the outermost part of the atom's structure and are called electrons. Electrons are about 2000 times smaller than the other particles that make up atoms. Their small size, as well as other factors, makes electrons the easiest part of an atom to push and move. Electrons typically do not move very far or very fast, but very large numbers of them moving at once can deliver a painful shock or heat your home.
+
+Two terms that are often used when discussing electricity are voltage and current. Voltage is a colloquial term for potential difference, which is a way of describing the available energy for electrons to use for moving. The unit used to measure potential difference is the volt (V). Current is the term for the flow of charged particles. In general, the higher the voltage, the more energy is available for electrons to use, and the greater the current. Current is measured in a unit called the ampere (A).
+
+In this experiment, you will have an opportunity to use electricity in small, safe amounts. By investigating how electricity interacts with different objects, you will gradually learn to use electricity effectively to create your own circuits, systems, and devices.
+
+\textbf{Objectives}
+\begin{itemize}
+	\item Detect the presence of current in a wire.
+	\item Explore different types of light bulbs.
+	\item Measure voltage.
+\end{itemize}
+
+\textbf{Materials}
+\begin{itemize}
+	\item Data collection system
+	\item Wireless voltage sensor
+	\item 10-$\Omega$ resistors
+	\item Magnetic compass	
+	\item Wires with clips ($\times 5$)
+	\item 7.5-V light bulb and socket
+	\item D-cell battery ($\times 2$) and holder 
+	\item 3-V coin-cell battery
+	\item LED		
+\end{itemize}
+ \newpage
+\textbf{Consider}
+\begin{enumerate}
+ 	\item What is electricity?
+	\answerspace{2.5in}
+	\item How do we know electricity is flowing?
+	\answerspace{2.5in}
+	\item What conditions are required for electricity to flow? 
+	\answerspace{2.5in}
+\end{enumerate}
+\newpage
+\textbf{Part I: Is Current Present?}
+
+\begin{enumerate}
+	\item Clip several wires together. Place the magnetic compass over the wires as shown in the figure below. Connect the wires to the power supply and observe the compass. Try this several times, moving the orientation of the wire relative to the room each time. 
+\vspace{0.5mm}
+{\par\centering \includegraphics[width=0.5\linewidth]{magnet_current.png} \par}
+
+\item Record your observations of how the magnetic compass behaved around the wire.
+\answerspace{2.0in}
+\end{enumerate}
+
+\textbf{Part II: Lighting a Bulb}
+
+\begin{enumerate}
+	\item Obtain a small light bulb. Using a single wire and a single D-cell battery, try different ways of touching them together in order to light the light bulb. You may not cut the wire. Once you determine one way to do it, see if you can find a different way.
+	\item Draw a circuit diagram for the wire, light bulb, and battery.
+\answerspace{3.0in} 
+	\item Obtain a red LED bulb and a 3-V coin cell battery. Light the LED. Determine a way to always be sure the LED will light.
+\end{enumerate}
+
+\textbf{Part III: Measuring Voltage in a Circuit}
+
+\begin{enumerate}
+	\item Open \textit{SPARKvue} and build a page with one graph.
+	\item Connect the wireless voltage sensor. You will use two alligator clip wires connected to the source terminals of the voltage sensor to measure the potential difference between the source terminals.
+	\item	Tare (``zero'') the voltage sensor.
+	\item Insert the two D-cell batteries into the battery holder.
+	\item Insert the light bulb into the light bulb socket.
+	\item Connect the wires from the battery holder and the light bulb socket so that the bulb glows.
+	\item Use the voltage sensor to measure the voltage across each battery individually, the two batteries together, the light bulb, and each wire. Record the voltage values in the table below. 
+	\item Add resistance to the setup. There should be a complete circuit from the batteries to the light bulb to the resistor and back to the batteries. The light bulb should still light, but it may be dimmer than before.
+   \item Use the voltage sensor to measure the voltage across each battery individually, the two batteries together, the light bulb, the resistor, and each wire. Record the voltage values in the table below.
+\end{enumerate}
+\begin{center}
+\begin{table}[h] 
+\centering{
+\begin{tabular}{| M{4.5cm} | M{4.5cm} | M{4.5cm} |} 
+ \hline
+ Component & Potential Difference (V) \newline {(Bulb Only)} & Potential Difference (V) \newline {(Bulb and Resistor)} \\ \hline
+Battery 1 & & \\[15pt] \hline
+Battery 2 & & \\[15pt] \hline
+Both batteries together & & \\[15pt] \hline
+Light bulb & & \\[15pt] \hline
+Wire 1 & & \\[15pt] \hline
+Wire 2 & & \\[15pt] \hline
+Resistor & & \\[15pt] \hline
+Wire 3 & & \\[15pt] \hline
+\end{tabular}
+}
+\label{table_voltage_circuit}
+\end{table}
+\end{center} 	 
+\newpage
+\textbf{Analysis Questions}
+\begin{enumerate}
+	\item How can you determine whether current is present in a wire?
+	\answerspace{2.0in}
+	\item How would you light a light bulb with only one wire and one battery? Can you do the same with an LED?
+	\answerspace{2.0in}
+	\item What are some differences between incandescent light bulbs and LEDs?
+	\answerspace{2.0in}
+	\item When you investigated the voltage across various components in a complete circuit, what patterns did you see?
+	\answerspace{3.0in}
+\end{enumerate}
+
+\textbf{Extend}
+\begin{enumerate}
+	\item Add more light bulbs or more resistors to a circuit and investigate if or how the voltage changes.
+	\item Use the PhET simulation ``Circuit Construction Kit'' to further explore circuits. To use the PhET simulation, see \href{http://phet.colorado.edu/en/simulation/circuit-construction-kit-dc}{http://phet.colorado.edu/en/simulation/circuit-construction-kit-dc}
+\end{enumerate}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

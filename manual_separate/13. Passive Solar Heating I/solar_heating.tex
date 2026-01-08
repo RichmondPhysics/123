@@ -1,0 +1,114 @@
+\documentclass[english,twoside]{article}
+
+\input{../labmanual_formatting_commands} %all general latex packages, commands, and definitions now here.
+
+\begin{document}
+
+\Lab{13}{Exploring Passive Solar Heating: Baseline Cooling Curve}
+
+\renewcommand{\arraystretch}{1.5}
+\setlength{\arrayrulewidth}{0.4mm}
+\setlength{\tabcolsep}{10pt}
+
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+\makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
+
+\textbf{Driving Question}
+
+To reduce the amount of electricity used to heat and cool buildings, people are working to refine passive solar design features that allow buildings to heat and cool without the need for a system that relies on electricity.
+ 
+A well-designed passive solar building retains heat in the winter in order to be comfortably warm and, during the summer, eliminates heat so that it remains cool. This heating and cooling is done without the use of pumps or fans and instead relies on insulation and shade, amongst other features.
+
+In this experiment, you will monitor temperature of a model home and determine the cooling rate of the interior after the model home has been heated by a lamp. Once you have this baseline data, you can compare it to future experiments after making modifications to your model home.
+
+\textbf{Objectives}
+\begin{itemize}
+	\item Measure the temperature of a model home as it cools.
+	\item Compare results to Newton's law of cooling.
+\end{itemize}
+
+\textbf{Materials}
+\begin{itemize}
+	\item Temperature sensor (2)	
+	\item Model home and accessories	
+	\item Heat lamp (or 100-W lamp)
+\end{itemize}	
+	
+\textbf{Procedure}
+\begin{enumerate}
+	\item Open \textit{SPARKvue} and build a page with a graph display.
+	\item Connect the temperature sensor to your device.
+	\item Display Temperature on the $y$-axis of a graph with Time on the $x$-axis.  
+	\item Record the room temperature in the data table.
+	\item Build a model home. Cut an opening on the front of the home for the window. Position a lamp with its bulb about 3 cm away from the model home's window. 
+		\begin{center}	\includegraphics[width=0.40\textwidth]{model_home.jpg}
+	\end{center}
+	\item Insert the temperature sensor through a small hole on the top of the home. 
+	\item Turn on the lamp and allow it to warm the model home. 
+	\item Turn off the lamp when the internal temperature of the model home is 7.0$^\circ$C greater than room temperature.
+	\item When the temperature drops to about 6.0$^\circ$C greater than room temperature, click or tap Collect to start data collection.
+	\item After data collection is complete, observe the graph. Determine the initial cooling rate.
+	\begin{enumerate}[(a)]
+		\item Select the first 20 seconds of data on the graph.
+		\item Click or tap Graph Tools, \inlinegraphics{graph_tools_icon.png}, and choose Apply Curve Fit.
+		\item Select Linear as the curve fit. Click or tap Apply. The linear-regression statistics for these two data columns are displayed for the equation in the form
+		\begin{equation*}
+			y = mx + b
+		\end{equation*}
+		where $x$ is time, $y$ is temperature, $m$ is the slope, and $b$ is the $y$-intercept.
+	\end{enumerate}
+		\item Record the value of the slope, $m$, as the initial cooling rate.
+		\item Determine the final cooling rate.
+		\begin{enumerate}[(a)]
+			\item Select the last 40 seconds of data on the graph.
+			\item Click or tap Graph Tools, \inlinegraphics{graph_tools_icon.png}, and choose Apply Curve Fit.
+			\item Select Linear as the curve fit. Click or tap Apply. 
+			\item Record the value of the slope, $m$, as the final cooling rate.
+		\end{enumerate}
+	\item Print or sketch your graph with the linear fits, as directed by your instructor.
+\end{enumerate}
+
+\begin{center}
+\begin{tabular}{ | M{4.0cm} | M{4.0cm} |}
+ \hline
+ Room temperature ($^\circ$C) & \\ \hline
+ Initial cooling rate ($^\circ$C/s) & \\[15pt] \hline
+ Final cooling rate ($^\circ$C/s) & \\[15pt] \hline
+\end{tabular}
+\end{center}
+	 
+\textbf{Data analysis}
+\begin{enumerate} 
+	\item Newton's law of cooling says that the rate of heat loss of an object is proportional to the difference between the temperature of the object, $T$, and the temperature of its surroundings, $T_s$:
+\begin{equation*}
+	\text{Cooling Rate} = -k(T - T_s) .
+\end{equation*}
+	From this assumption, Newton showed that the temperature of the object can be modeled by the equation
+	\begin{equation*}
+		T = T_s + (T_0 - T_s) e^{-kt} ,
+	\end{equation*}
+	where $T_0$ is the initial temperature of the object and $k$ is the coefficient of heat transfer. Apply an exponential curve fit to the full set of collected data and write the corresponding equation for the curve. Using this equation, obtain a numerical value for $k$.
+\answerspace{2.5in}
+
+	\item Compare your data to the data collected by other groups. What similarities and differences between the model homes can explain how your results compare with those of other people in the class? 
+	\answerspace{2.5in}
+
+	\item	Imagine if data collection had continued for another 300 seconds. Would the temperature ever stop decreasing? When and why?
+	\answerspace{2.5in}
+
+	\item List some building design features that help capture solar energy and retain heat.
+	\answerspace{2.5in}
+\end{enumerate}
+\newpage
+\textbf{Extend}
+\begin{enumerate}
+	\item Based on what you learned from this lab, design your own model home. You can experiment with color, insulation, reflective material, surface area, and more as you try to design a more efficient system for heating a home using energy from the sun. 
+	\item Create a competition with the class. The winner builds a home that has the least change between the warmest temperature and the final temperature over the same time span.
+	\item Look into factors that help keep a home cool in the summer. Use this information to make adjustments to your model home.
+\end{enumerate}
+
+
+\end{document}
+

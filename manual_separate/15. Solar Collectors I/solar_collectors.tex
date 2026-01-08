@@ -1,0 +1,234 @@
+\documentclass[english,twoside]{article}
+
+\input{../labmanual_formatting_commands} %all general latex packages, commands, and definitions now here.
+
+\begin{document}
+
+\Lab{15}{Exploring Solar Collectors}
+
+\renewcommand{\arraystretch}{1.5}
+\setlength{\arrayrulewidth}{0.4mm}
+\setlength{\tabcolsep}{10pt}
+
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+\makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
+
+
+\textbf{Driving Question}
+
+Using the sun to heat water is not a new idea. Humans have been harnessing the thermal energy of the sun for centuries. Today, solar thermal systems are found on rooftops around the world, providing affordable, pollution-free hot water for millions of people.
+
+In most US homes, water is heated using electricity, natural gas, or oil. Since most of our electricity is generated from fossil fuels, it is safe to say that most water in the United States is heated using energy from fossil fuels. The burning of fossil fuels releases pollution into the environment and is believed to contribute to global climate change.
+
+Since it takes a large amount of energy to heat water, it can be a significant portion of our energy bills. Replacing a traditional water heater with a device that can heat water using energy from the sun is not only good for the environment, it can also be a great way to save money on your energy bill.
+
+Solar collectors take advantage of the greenhouse effect in order to heat water. Have you ever noticed how surprisingly warm it is inside a car that has been parked in the sun? Sunlight easily passes through the glass windows and is converted into heat when it hits the interior of the car. Some of that heat passes back through the glass, but a lot of it gets trapped inside. In a solar collector, this trapped heat warms the water that is circulating through the system.
+
+A solar collector system used to heat water generally includes the following parts: 
+\begin{itemize}
+	\item A solar collector positioned to face the sun so it can catch and absorb sun light 
+	\item A transparent cove
+	\item A heat insulating backing for the solar collector
+	\item A fluid, either water or antifreeze, flowing through the collector, usually in tubes
+	\item An insulated tank to store the heated water
+	\item (optional) A pump and controls to move the water through the system
+	\item (optional) A back-up energy source (electric or natural gas)
+\end{itemize}
+
+\begin{figure}[h]
+{\par\centering \includegraphics{solar_collector_system.png} \par}
+\caption{A solar collector system}
+\label{solar_collector_system}
+\end{figure} 
+
+The KidWind Solar Thermal Exploration Kit that you will use in this experiment is a model of what is called an active or forced circulation system. This type of solar water heater requires a pump to move water from the storage tank to the collector. Most solar water heaters in the United States are forced circulation systems because this type of system works well even when temperatures drop below freezing. Passive systems that do not use an electric pump are also common, but are not practical for colder climates where the water may freeze.
+
+The color of the solar absorber affects the ability of the solar collector to take advantage of the greenhouse effect. Every color reflects a certain amount of light while absorbing the rest as heat energy. In this experiment, you measure the reflectivity of various colors using a light sensor, and then compare these values to the reflection value of aluminum foil. Aluminum foil will arbitrarily be assigned a reflectivity of 100 percent. You will calculate percent reflectivity using the relationship 
+\begin{equation*}
+	\%\text{ reflectivity} = \frac{\text{value for paper}}{\text{value for aluminum}} \times 100
+\end{equation*}
+ 
+After determining the best color for the background of the solar collector, you will set up a solar collector and measure the change in water temperature during data collection.
+
+\textbf{Objectives}
+\begin{itemize}
+	\item Use a light sensor to measure reflected light.
+	\item Use a temperature sensor to measure changes in temperature.
+	\item Calculate percent reflectivity of various colors.
+	\item Use results to design and set up a solar collector.
+	\item Determine the temperature change of the water in a solar collector.
+\end{itemize}
+
+\textbf{Materials}
+\begin{itemize}
+	\item Temperature sensor
+	\item 2 utility clamps
+	\item Light Sensor	
+	\item lamp and 150 W light bulb
+	\item KidWind Solar Thermal Exploration Kit	
+	\item 2 pieces of paper of different colors
+	\item Ring stand	
+	\item Aluminum foil
+	\item Tape	
+	\item Ruler
+\end{itemize}
+\newpage
+\textbf{Preliminary Questions}
+\begin{enumerate}
+	\item One of the many advantages of using a solar water heating system to heat water for your home is that it can be retrofitted to older buildings. Identify two other advantages and also two disadvantages of using solar collectors for heating water.
+	\answerspace{3.0in}
+	\item What design factors, other than color, affect the efficiency of a solar collector?
+	\answerspace{3.0in}
+	\item What colors will you test for reflectivity and absorption? Predict the rank of the pieces of paper, in terms of the paper's reflectivity, from least to greatest. Create a second list that ranks the paper's ability to absorb heat, from least to greatest.
+	\answerspace{4.0in}
+\end{enumerate}
+
+\textbf{Procedure}
+
+\textit{Part I: Light Reflectivity and Heat Absorption}
+\begin{enumerate}
+	\item Open \textit{SPARKvue} and build a page with two graphs.
+	\item Connect the light and temperature sensors.
+	\item Set up the data-collection mode.
+	\begin{enumerate}[(a)]
+		\item Click or tap Mode to open Data Collection Settings. 
+		\item Change Time Units to min.
+		\item Change Rate to 6 samples/min and End Collection to 10 minutes.
+		\item Click or tap Done.
+	\end{enumerate}
+	\item Set up the equipment for data collection. 
+	\begin{enumerate}[(a)]
+		\item Tape the cable of the temperature sensor to the table surface.
+		\begin{center}
+\includegraphics[width=0.7\linewidth]{cable.png}
+\end{center}
+    	\item Bend the tip of the temperature sensor to make sure that the sensor does not touch the tabletop during data collection (or you will measure the temperature of the table).
+		\item Place one of your pieces of paper over the temperature sensor.
+		\item Use a utility clamp and ring stand to fasten a light sensor 5 cm above the paper. 
+	\begin{center}
+\includegraphics[width=0.5\linewidth]{experimental_setup.png}
+\end{center}		
+	\end{enumerate} 
+	\item Switch on the light bulb and click or tap Collect to start data collection.
+	\item When data collection is complete, turn off the lamp and determine and record the mean light reflection value and the minimum and maximum temperature readings.
+	\begin{enumerate}[(a)]
+		\item Click or tap Graph Tools, \inlinegraphics{graph_tools_icon.png}, for the temperature graph and choose View Statistics. Record the minimum and maximum temperature readings (round to the nearest 0.1$^\circ$C).
+		\item Click or tap Graph Tools, \inlinegraphics{graph_tools_icon.png}, for the illuminance graph and choose View Statistics. Record the mean light reflection value in your data table (round to the nearest whole lux).
+	\end{enumerate}
+	\item Repeat Steps 4-5 two times (once for the second piece of paper you are testing and a second time for a piece of aluminum foil). 
+	\item Complete the Processing the Data and Analysis Questions sections for Part I before continuing to Part II.
+\end{enumerate}
+
+\textit{Part II: Solar Collector}
+\begin{enumerate} 
+	\item Disconnect the light sensor from \textit{SPARKvue}. Leave the temperature sensor connected. Click or tap File, \inlinegraphics{file_icon.png}, and choose New Experiment. Click or tap Sensor Data Collection.
+	\item Click or tap Mode to open data collection settings. 
+	\begin{enumerate}[(a)]
+		\item Change Time Units to min.
+		\item Change Rate to 6 samples/min and End Collection to 20 minutes. 
+		\item Click or tap Done.
+	\end{enumerate}
+	\item Set up the solar collector in a sunny place.
+	\begin{enumerate}[(a)]
+		\item If your tray is a color other than the color you determined during Part I, line the tray with paper to change its color.
+		\item Arrange the tubing in the box so water will flow through it. If necessary, tape down the tubing to hold it in place (see figure below).
+		\item Put the cover on the solar collector.
+		\item Connect the tubing to the water pump and secure the pump to the bottom of the water storage container. 
+		\item Add water to the storage container. Measure the amount of water added.  
+		\item Place the free end of the tubing into the water.
+		\item Position the temperature sensor in the water storage container. If necessary, tape it in place.
+		\item Connect the solar panel to the wires from the pump (red to red and black to black) using the alligator clips. Note: If the solar panel is receiving sunlight, the pump will start working when the panel and pump are connected. Cover the solar panel before you connect the wires and then uncover it when everything is in place.
+	\begin{center}
+\includegraphics[width=0.5\linewidth]{experimental_setup_2.png}
+\end{center}
+	\end{enumerate}
+	\item Click or tap Collect to start data collection.
+	\item When data collection is complete, a graph of temperature vs. time is displayed. Determine the starting temperature and maximum temperature. Record these values in the data table.
+\end{enumerate}
+
+\textbf{Data Table}
+
+\textit{Part I: Light Reflectivity and Heat Absorption}
+
+\begin{center}
+\begin{tabular}{ | M{4.0cm} | M{2.5cm} | M{2.5cm} | M{2.5cm} |}
+ \hline
+Color & & & Aluminum \\ \hline
+Starting temperature ($^\circ$C) & & & \\[15pt] \hline
+Final temperature ($^\circ$C) & & & \\[15pt] \hline
+Change in temperature ($^\circ$C) & & & \\[15pt] \hline
+Reflection value (lux) & & & \\[15pt] \hline
+Percent reflectivity (\%) & & & \\[15pt] \hline
+\end{tabular}
+\end{center}
+
+\textit{Part II: Solar Collector}
+
+\begin{center}
+\begin{tabular}{ | M{4.0cm} | M{2.5cm} | }
+ \hline
+Color &  \\ \hline
+Starting temperature ($^\circ$C) &  \\[15pt] \hline
+Maximum temperature ($^\circ$C) &  \\[15pt] \hline
+Change in temperature ($^\circ$C) & \\[15pt] \hline
+\end{tabular}
+\end{center}
+
+\textbf{Processing the Data}
+
+\textit{Part I: Light Rflectivity and Heat Absorption}
+\begin{enumerate}
+	\item Subtract to find the change in temperature for each color paper. 
+	\item Calculate the percent reflectivity of each color paper.
+\end{enumerate}
+
+\textit{Part II: Solar Collector}
+\begin{enumerate} 
+	\item Subtract to find the change in temperature. 
+\end{enumerate}
+
+\textbf{Analysis Questions}
+
+\textit{Part I: Light Reflectivity and Heat Absorption}
+\begin{enumerate}
+	\item Which color paper had the largest temperature increase?
+	\answerspace{2.5in}
+	\item Which color paper had the smallest temperature increase?
+	\answerspace{2.5in}
+	\item Solar collectors can be used to absorb the sun's energy and change it to heat. What color would work best for solar collectors? Explain.
+	\answerspace{3.0in}
+	\item Which color paper has the highest reflectivity?
+	\answerspace{2.5in}
+	\item Which color paper has the lowest reflectivity?
+	\answerspace{2.5in}
+	\item What relationship do you see between percent reflectivity and temperature change?
+	\answerspace{3.0in}
+\end{enumerate}
+
+\textit{Part II: Solar Collector}
+\begin{enumerate} 
+	\item Sketch or print your graph. Describe what happened to the temperature of the water during data collection. Did the water heat up at a consistent rate?
+	\answerspace{3.5in}
+	\item Compare your results to the data collected by other groups. Which variables account for differences between your data and the results of the other groups?
+	\answerspace{2.5in}
+	\item If you were going to re-design your solar collector to try to make it heat water more quickly, what would you do?
+	\answerspace{2.5in}
+\end{enumerate}
+
+\textbf{Extend}
+\begin{enumerate}
+	\item There are two general categories of solar collector: flat plate collectors and evacuated tube collectors. Research the two categories and explain why you would chose to install one over the other based on their differences. 
+	\item Other than heating water for use in a home, what else do people use solar collectors for? 
+	\item Research what would be involved in retrofitting your own home to use a solar collector to heat air, water, or generate electricity. Consider installation costs and cost savings over time. 
+	\item Collect data for the solar water heater for longer than 20 minutes. How hot does the water get after an hour? Eventually, does the temperature stop rising?
+	\item Makes changes to your solar collector and collect data again to see if you get a greater increase in temperature. 
+	\item Measure the mass of water heated in the solar collector and use the specific heat capacity of water to calculate the amount of energy used to heat the water
+\begin{equation*}
+	Q = mc \Delta T ,
+\end{equation*}
+where $Q$ is the heat supplied, $m$ is mass, $c$ is specific heat capacity of water, and $\Delta T$ is the change in temperature.
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,147 @@
+\documentclass[english,twoside]{article}
+
+\input{../labmanual_formatting_commands} %all general latex packages, commands, and definitions now here.
+
+\begin{document}
+
+\Lab{27}{Power Curves}
+
+\renewcommand{\arraystretch}{1.5}
+\setlength{\arrayrulewidth}{0.4mm}
+\setlength{\tabcolsep}{10pt}
+
+\newlength{\myMheight}
+% Create the reference text for measures
+\settoheight{\myMheight}{M}
+
+
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+\makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
+
+\textbf{Driving Question}
+
+\begin{wrapfigure}{r}{0.40\textwidth}
+  \begin{center}
+    \includegraphics[width=0.35\textwidth]{power_curve.png}
+  \end{center}
+\end{wrapfigure}
+
+What does the power curve for the turbine look like, and what is its maximum power?
+
+A power curve is a diagram of the power a wind turbine can generate compared to the wind speed. Different types of wind turbines have unique power curves that identify 3 important wind speeds.
+
+The first speed in a power curve is called the cut-in speed, the minimum wind speed needed to start generating power. It is the speed where the power increases above zero and a curve starts to form.
+
+The second speed is the rated speed, found where the power levels off and the curve looks flat. It indicates the wind speed where the turbine produces maximum power.
+Finally, the cut-out speed is the wind speed where the turbine will automatically slow down or stop completely to avoid damage from spinning too fast in high winds. The turbine stops producing power at this point, and the power curve ends.
+
+\textbf{Materials}
+\begin{itemize}
+	\item Wind turbine
+	\item Voltage sensor with red and black banana plug leads
+	\item Current sensor with red and black banana plug leads
+	\item Weather sensor with anemometer	
+	\item Alligator clip adapters (2, black)
+	\item Alligator clip leads (2, black and green)
+	\item 33-$\Omega$ resistor
+ 	\item Box fan, 3 or more speeds (same fan as previous activity, with tape)
+	\item Meter stick
+	\item Masking tape
+	\item Ring stand with clamp
+	\item Textbooks for weight (2)
+\end{itemize}
+
+\textbf{Safety}
+
+\begin{itemize}
+	\item Wear safety goggles throughout the experiment.
+	\item Tie back long hair, remove dangling jewelry, secure loose clothing, and roll up long sleeves.
+	\item Always make sure blades are properly inserted in the turbine and screws are secure before turning on the fan.
+\end{itemize}
+
+\textbf{Consider}
+
+{\par\centering \includegraphics[width=0.8\linewidth]{power_curve_1.png} \par}
+
+\begin{enumerate}
+	\item What is the cut-in speed for the sample graph?
+	\begin{enumerate}[A.]
+		\item 0 m/s
+		\item 4 m/s
+		\item 13 m/s
+		\item 25 m/s
+ 	\end{enumerate}
+	\item Where does cut-out speed begin?
+	\begin{enumerate}[A.]
+		\item 0 m/s
+		\item 4 m/s
+		\item 13 m/s
+		\item 25 m/s
+	\end{enumerate}
+	\item Where does rated wind speed begin?
+	\begin{enumerate}[A.]
+		\item 0 m/s
+		\item 4 m/s
+		\item 13 m/s
+		\item 25 m/s
+	\end{enumerate}
+\end{enumerate}
+
+\textbf{Investigate}
+\begin{enumerate}
+	\item Connect the anemometer, voltage, and current sensors. Use \textbf{Help (?)} if necessary.
+	\item Build a page with a graph display. Open the Line Graph Properties menu by clicking either measurement on the $x$ or $y$ axis.
+	\item Select Wind Speed for the $x$-axis. For the $y$-axis, click Measurement. Choose User-entered from the menu to the right.
+	\item Find the Calculated Data section. Select Create/Edit Calculation.
+	\item Type the following equation inside the text box exactly as shown, including capital letters and spacing:
+\begin{equation*}
+	\text{POWER}=
+\end{equation*}
+	\item With the cursor still in the text box, select the orange Measurements button in the keypad display. Select current. Choose the Measurements button again and select voltage. Your equation should now look like this:
+\begin{equation*}
+	\text{POWER}=[\text{Current}][\text{Voltage}]
+\end{equation*}
+	\item Use the keypad display to add $*1000$ to the equation. Your equation should look like this: 
+\begin{equation*}
+	\text{POWER}=[\text{Current}][\text{Voltage}]*1000
+\end{equation*}
+	\item Select Return in the keypad. You should see the following message below the equation: 
+\begin{equation*}
+	\text{Model is calculated}
+\end{equation*}
+	\item Select done on the keypad. Choose OK.
+	\item In the Line Graph Properties menu, choose Measurement for the y-axis. Select the User-Entered tab to the right and choose POWER from the Calculated Data section. Select OK.
+	\item Assemble the turbine according to the best blade length, number, pitch, leaf logo facing the fan, and fan distance configuration found in previous activities. Add textbooks to the turbine base.
+	\item Use the ring stand and clamp to place the weather sensor facing directly against the fan, but not interfering with the turbine.
+	\item Insert banana plug leads into sensors if necessary. Use red for (+) and black for (-).
+	\item Attach alligator clip leads to the motor terminals. Assemble the voltage sensor, current sensor, and resistor.
+	\item Turn the fan on to its optimal setting and let the turbine reach full speed.
+  \begin{center}
+    \includegraphics[width=0.48\textwidth]{power_curve_example.png}
+  \end{center}
+	\item Start collecting data.
+	\item Turn the fan off.
+	\item Stop collecting data when the turbine and anemometer stop spinning.
+	\item Perform Steps 15--18 for a minimum of 4 trials. Find a trial that resembles a power curve like the example.
+	\item Hide runs you will not be using. Use \textbf{Help (?)} if necessary.
+	\item Sketch your results in the graph below. Remember to add a title. Include numbers and labels with units for both axes.
+
+{\par\centering \includegraphics{blank_graph.png} \par}
+\end{enumerate}
+ 
+\textbf{Analyze}
+\begin{enumerate}
+	\item What is the minimum wind speed needed by the turbine to start producing power? Note: Use the first wind speed above zero where you have a power data point.
+	\answerspace{1.5in}
+	\item At what wind speed does the turbine begin producing maximum power?
+	\answerspace{1.5in}
+\end{enumerate}
+ 
+\textbf{Extend}
+\begin{enumerate}
+	\item Does the power curve change with different blade configurations? Design an experiment to test your prediction.
+\end{enumerate}
+
+\end{document}

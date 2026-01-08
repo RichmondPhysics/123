@@ -1,0 +1,280 @@
+%Various Latex formatting parts are here, to keep master.tex files relatively clean.
+
+%---------------------------------------------------------------------------------------------------
+%Things related to fonts and overall page appearance
+
+\usepackage{caption}
+\usepackage[normalem]{ulem}
+\usepackage{lmodern}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{babel}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx, calc}
+\usepackage[nomarginpar]{geometry}
+\usepackage{wrapfig}
+\geometry{verbose,letterpaper}
+\addtolength{\oddsidemargin}{1.0cm} %without these two lines, larger margin is on the OUTSIDE.  We want the larger edge on the INSIDE, to allow room for the three hole punches
+\addtolength{\evensidemargin}{-1.0cm}
+\setlength\topmargin{0.2in}
+\addtolength{\hoffset}{-1.0cm}
+\addtolength{\textwidth}{2.0cm}
+\addtolength{\voffset}{-1.5cm} %This line is apparently needed on some versions of MikTex XeLatex.  Comment out if your pages appear shifted too high.
+\addtolength{\textheight}{3.5cm}
+\setlength\headheight{1.25em} %about 12pt for 10-point type; about 14.6pt for 12-point type
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\newcommand{\setlabnumber}[1]{%
+  \setcounter{section}{#1}\addtocounter{section}{-1}%
+}
+
+\newcommand{\Lab}[2]{%
+  \setlabnumber{#1}%
+  \section{#2}% <-- no backslash before #2
+}
+
+\newcommand{\headersupplementmark}{} %This can be changed to `Lab' or `Appendix' within master.tex
+\fancyhead[LO,RE]{\slshape \rightmark} 
+\fancyhead[LE,RO]{\slshape \MakeUppercase{\headersupplementmark}\leftmark}
+\usepackage{titlesec} %must be called AFTER fancyhead.
+\titleformat{\section}{\normalfont\Large\bfseries}{\headersupplementmark \thesection}{1em}{} % At start of section
+\renewcommand{\headersupplementmark}{Lab }
+
+\newcommand\immediateaddcontentsline[3]{%
+        \begingroup
+        \let\origwrite\write
+        \def\write{\immediate\origwrite}%
+        \addcontentsline{#1}{#2}{#3}%
+        \endgroup
+}
+\newcounter{tocpartnum}
+\renewcommand{\part}[1]{
+	\stepcounter{tocpartnum}
+	\phantomsection %This line fixes a problem in compiling the "bookmarks" (the outline) in hyperref under pdflatex.
+	\immediateaddcontentsline{toc}{part}{\Roman{tocpartnum} \hspace{1ex} #1}{}}
+
+\usepackage{tocloft} %Allow us to leave page numbers for Parts out of table of contents
+\cftpagenumbersoff{part} %No page numbers for Parts out of table of contents
+\renewcommand{\cftsecdotsep}{\cftsubsecdotsep}
+\setcounter{tocdepth}{1}
+\setlength{\cftbeforesecskip}{10.0pt plus 1.0pt minus 3.0pt} %space between chapter listings in TOC.  Default is 10.0pt plus 1.0pt
+
+\setlength\parskip{\medskipamount}
+\setlength\parindent{0pt}
+
+\newlength\myheight
+\newlength\mydepth
+\settototalheight\myheight{Xygp}
+\settodepth\mydepth{Xygp}
+\setlength\fboxsep{0pt}
+\newcommand*\inlinegraphics[1]{%
+  \settototalheight\myheight{Xygp}%
+  \settodepth\mydepth{Xygp}%
+  \raisebox{-\mydepth}{\includegraphics[height=\myheight]{#1}}%
+} %for embedded icons that scale to size of text
+
+
+\newcommand{\startappendix}{
+	\appendix
+	\immediateaddcontentsline{toc}{part}{Appendices} 
+		%Doing this instead of \part avoids a Roman number for Appendices in the toc
+	\cleardoublepage
+	\NoForceSectionOddPage 
+		%Makes NO extra page break after each appendix; Appendices can start on odd or even page (right or left side).
+	\renewcommand{\headersupplementmark}{Appendix }
+	\titleformat{\section}{\normalfont\large\bfseries}{\headersupplementmark \thesection :}{1ex}{}
+}
+
+\usepackage{xcolor}
+\usepackage[pagecolor={white},nopagecolor={white}]{pagecolor}
+\usepackage{microtype} % (apparently not compatible with pdflatex)
+%\usepackage{epstopdf} %this package apparently allows pdflatex to work on this document, since all we use are eps figures.
+\usepackage{authblk}
+
+\usepackage[hyperfootnotes=false]{hyperref} %hypderfootnotes disabled for compatibility with footmisc.
+%\usepackage{bookmark} %including this package magically fixes a problem whereby hyperref messes up the
+                                     %bookmarks (the outline) in the pdf output when run under pdflatex.
+                                     %Alternatively, the \phantomsection command above fixes it too.
+\usepackage[stable]{footmisc} %option [stable] removes footnotes from section title in TOC and header.
+
+% The following two lines fix an additional problem that arises when a footnote comes within a section title.
+% Hyperref normally includes the footnote text in the pdf table of contents, and throws a warning.
+% The code below excludes the footnote text, and also makes it so no warning is issued.
+\let\regularfootnote\footnote
+\renewcommand{\footnote}[1]{\texorpdfstring{\regularfootnote{#1}}{}}
+
+
+%---------------------------------------------------------------------------------------------------
+%Things related to sectioning and including files
+
+\usepackage{xr} %used to allow external references, so that master_supplement.tex can reference appendices, for instance.
+%\usepackage{newclude} %Allows use of /include*{}
+%DANGER DANGER: newclude is NOT compatible with package xr, used for external references.
+
+\usepackage{import}
+\usepackage{xparse}
+% The following lines define a new command \includelab, for including labs in the master.tex file.
+% Usage is \includelab{1}{file} to include it, or \includelab{0}{file} to NOT include it.  
+% But all 0's can be overridden by writing \includealllabstrue in the master.tex file, which is easier than deleting 
+% fifty individual `%' signs and then remembering to put them all back, which is what you had to do before.
+% \includeonly still works as you expect it to.
+%
+% You can also specify a directory for the file, as in \includelab{1}[path]{file}.
+% This provides a clean way to share files between 131, 132, and 125.  For example, within the 132 master file,
+% if you want to call a 131 lab, you would use: 
+%        \includelab{1}[../../131/StudentGuideModule1/]{velocity/velocity}.  
+% Among other benefits, this creates a file velocity/velocity.aux within the 132 directory structure, 
+% so that the aux file from 132 does not interfere with the aux file from 131.
+\newif\ifincludealllabs
+
+\NewDocumentCommand \includelab { m o m } {%
+  \IfNoValueTF  {#2}  {%NO directory {#1} {#2} {#3} \par 
+	\ifnum#1=1 \input{#3} 
+	\else \ifincludealllabs \input{#3} \fi 
+	\fi
+	}
+  {%There is a directory {#1} {#2} {#3} \par
+	\ifnum#1=1 \subinputfrom{#2} {#3} 
+	\else \ifincludealllabs \subinputfrom{#2} {#3} \fi 
+	\fi
+	}
+}
+% Note on 8/4/2022 by MD: 
+%I fixed the problem noticed by MT below.
+%The new command is \input instead of \include, and \subinputfrom instead of \subincludefrom
+
+% Note on 1/24/2021 by MT: 
+% It appears that a recent (~2020) update of MikTeX has changed the behavior or the import package.
+% It used to be that if the 132 master.tex file used the example above to include the velocity lab from the 131 
+% directory, the aux file would be written inside the 132 directory structure in ./velocity .  Now, the aux file is
+% written in ../../131/StudentGuideModule1/velocity, which is not allowed and causes an error.  
+% (Tex does not allow itself to write anything to a parent or sibling directory, only to a daughter directory.)
+% For now, my workaround has been to override this safety feature by setting an environment variable:
+%           MIKTEX_ALLOWUNSAFEOUTPUTFILES=1
+% But this is not ideal.
+
+%---------------------------------------------------------------------------------------------------
+%Packages and new commands providing general utilities
+
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{comment}
+\usepackage{makeidx}
+\usepackage{esvect}
+\usepackage{amsmath} %uncommented by MT 5/2015, used in "E near charged rod"
+\usepackage{amssymb}
+\usepackage{mathtools} %added by MT 6/2015, for access to dcases environment in finding_v_from_e
+\usepackage{units} % provides \nicefrac function for nice looking 1/2, used for half-life t_{1/2}
+%\input{../../131/StudentGuideModule1/pgfplots_graphs/lab_graph_definitions.tex}
+%\input{../../131/StudentGuideModule1/endnote_commands.tex}
+
+\usepackage{hhline}
+\setlength\doublerulesep{0.75pt}
+\usepackage{tabularx} %added by MT 6/2015, for fixed width columns, used in rc_circuits
+%For fixed width columns:
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+% define a strut for extra vertical space in tables.
+\newcommand{\hi}{\rule[-2mm]{0mm}{6mm}}
+
+%I make use of some latex features to manage the section numbers. To use those you have to insert the following lines into the latex preamble (before the %"\begin{document}" command). -gpg
+% two new commands to do labelling. - gpg 12/4/13
+\newcommand{\customlabel}[2]{%
+\protected@write \@auxout {}{\string \newlabel {#1}{{#2}{}}}}
+
+\newcommand{\actlabel}[1]{%
+\protected@write \@auxout {}{\string \newlabel {#1}{{\arabic{activity}}{}}}}
+
+\newcounter{activity}
+
+\usepackage{enumerate}
+\usepackage[shortlabels]{enumitem} %added 3/2016 by MT.  Tested 100% with other labs, looks like it does no harm.
+%enumitem package allows enumerate[resume], which allows enumerate to play nicely with wrapfig (see induction1).
+%enumitem package also provides very useful [wide] and [nosep] presets. (See, eg. resonance_tubes).
+\SetEnumitemKey{labparts}{wide, label=(\emph{\alph*})} %defines labparts to number parts as (a), (b), etc.
+
+
+\usepackage{chngcntr} %allows control over counters
+\counterwithin*{footnote}{section} %resets the footnote counter to 1 at every new section (each lab)
+\counterwithin*{equation}{section} %resets the equation counter to 1 at every new section (each lab)
+\counterwithin*{figure}{section} %resets the figure counter to 1 at every new section (each lab)
+%\counterwithin*{endnote}{section} %resets the figure counter to 1 at every new section (each lab)
+
+\newcommand\specialcaret {\hspace{0.0ex}\raisebox{0.6ex}{\scalebox{0.7}[0.7]{$\boldsymbol{\wedge}$}}\hspace{0.1ex}}
+
+\newcommand{\makelabheader}
+%{Name: \rule{2.0in}{0.1pt}\hfill{}Section: \rule{1.0in}{0.1pt}\hfill{}Date: \rule{1.0in}{0.1pt}}
+{Name: \rule{2.0in}{0.1pt}\hfill{}Lab Partner(s): \rule{3.0in}{0.1pt}}
+
+
+%A new command for putting a box around a paragraph:
+\newenvironment{newboxed} %maybe there's a better way to do this.  I just cribbed from the web. --MT
+    {\begin{center}
+    \begin{tabular}{|p{0.9\textwidth}|}
+    \hline\vspace{-0.02in}
+    }
+    { 
+    \vspace{0.05in}
+    \\\hline
+    \end{tabular} 
+    \end{center}
+    }
+
+
+%  The following command, \answerspace, should be used to replace \vspace.
+%  \vspace{} is not ideal for an answer space for students, for two reasons:
+%  1. It can be ignored if it comes at the end of a page, and
+%  2. The spacing is exact, and Latex will not stretch or compress it at all to make things fit on a page, which means
+%  that other things WILL get stretched or compressed to make things fit, which means those other things will 
+%  end up looking bad, and leading to a lot of underfull \vbox warnings.
+%  \answerspace fixes both of those problems, specifically allowing the space to grow to up to 1.5 times the stated size.
+\newlength\answerlength
+\newcommand{\answerspace}[1]{
+	\setlength\answerlength{#1}
+	\vspace*{1.0\answerlength plus 0.5\answerlength}}
+
+%The following code can be used to make each lab start on odd numbered page (right hand side).
+\let\NoExtraPageSection\section
+\let\NoExtraPagePart\part
+\newcommand{\ForceSectionOddPage}{
+	\renewcommand{\section}{\cleardoublepage\NoExtraPageSection}
+	\renewcommand{\part}{\cleardoublepage\NoExtraPagePart}
+	}
+\newcommand{\NoForceSectionOddPage}{
+	\renewcommand{\section}{\NoExtraPageSection}
+	\renewcommand{\part}{\NoExtraPagePart}
+	}
+
+%The following code can be used to make each lab start on its own page--should only be used for electronic copies.
+\newcommand{\ForceSectionNewPage}{
+  \renewcommand{\section}{\clearpage\NoExtraPageSection}
+  \renewcommand{\part}{\clearpage\NoExtraPagePart}
+}
+
+\newif\ifForOneTwentyFive %is set to true in master.tex for PHYS 125.  Allows alternate versions of the labs.  Use with care!
+
+\newcommand{\filename}[1]{{\sffamily\fontshape{sl}\selectfont #1}}
+\newcommand{\button}[1]{{\fontshape{sl}\selectfont #1}}
+
+%Next lines implement conditional references, to reference a lab or appendix only if it exists in the document.
+\makeatletter
+\newcommand{\iflabelexists}[3]{\@ifundefined{r@#1}{#3}{#2}}
+%May be slightly tidier to eventually implement this using package etoolbox
+%See https://tex.stackexchange.com/questions/111311/how-to-make-a-conditional-reference-to-a-text-label
+\makeatother
+
+\hyphenation{im-ped-ance}
+
+\renewcommand{\arraystretch}{1.5}
+\setlength{\arrayrulewidth}{0.4mm}
+\setlength{\tabcolsep}{10pt}
+
+\newlength{\myMheight}
+% Create the reference text for measures
+\settoheight{\myMheight}{M}
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+

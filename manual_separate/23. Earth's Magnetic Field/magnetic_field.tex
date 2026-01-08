@@ -1,0 +1,222 @@
+\documentclass[english,twoside]{article}
+
+\input{../labmanual_formatting_commands} %all general latex packages, commands, and definitions now here.
+
+\begin{document}
+
+\Lab{23}{Earth's Magnetic Field}
+
+\renewcommand{\arraystretch}{1.5}
+\setlength{\arrayrulewidth}{0.4mm}
+\setlength{\tabcolsep}{10pt}
+
+\newlength{\myMheight}
+% Create the reference text for measures
+\settoheight{\myMheight}{M}
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+\makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
+
+
+\textbf{Driving Question}
+
+How can models be used to visualize the magnetic field lines surrounding Earth? 
+\begin{itemize}
+	\item How does the magnetic field strength vary with different locations on Earth?
+	\item What creates Earth's magnetic field?
+	\item How does Earth's magnetic field help navigators stay on course during their travels? 
+\end{itemize}
+
+\textbf{Background}
+
+All magnetic objects produce invisible lines of force connecting their poles. Although Earth's magnetic field might suggest the presence of a powerful bar magnet at its center, no such magnet exists. Instead, Earth's magnetic field arises from complex interactions between convection currents in the molten outer core and the solid inner core, both of which contain large quantities of ferromagnetic metals such as iron, nickel, and cobalt.
+
+The north magnetic pole and the geographic North Pole are distinct. The north magnetic pole is the location where Earth's geomagnetic field points vertically downward, meaning the magnetic dip is $90^\circ$. Compass needles generally align with Earth's magnetic poles, but the magnetic and geographic poles are not coincident. In 2025, the north magnetic pole is located at $85.76^\circ$N latitude and $139.30^\circ$E longitude, whereas the geographic North Pole is defined as $90^\circ$N latitude and $0^\circ$W longitude (longitude is arbitrary at the poles). Moreover, the north magnetic pole is not fixed---it has wandered roughly 600 miles northward over the past century to its current position in the Canadian Arctic.
+
+Magnetic reversals further illustrate the dynamic nature of Earth's field. Although navigation relies heavily on Earth's magnetism, it is not entirely stable. Lava flows in Oregon indicate that about 16 million years ago, magnetic north shifted as much as 6 degrees per day. Within just over a week, a compass in the United States would have pointed toward Mexico City. Over approximately 1,000 years, the magnetic field fully reversed, with the magnetic north becoming south. Geological evidence, preserved in the paleomagnetic record, shows that such reversals have occurred many times throughout Earth's history. Today, seafloor spreading provides a detailed record of these reversals: by mapping the magnetic polarity of crustal rocks on either side of the Mid-Atlantic Ridge, scientists can determine both the age of the rocks and the rate at which tectonic plates have moved.
+
+
+\textbf{Materials}
+\begin{itemize}
+	\item Magnetic field sensor
+	\item Bar magnet
+	\item Small cork
+	\item Sewing needle
+	\item Pin
+	\item Water, 500 mL
+	\item Clear plastic cup
+	\item Magnetic field demonstrator plate (4), 3D
+	\item Degree wheel template
+	\item Map of Earth template
+\end{itemize}
+
+\textbf{Safety}
+
+Keep magnets away from electronic equipment.
+
+\textbf{Part I: Constructing a Simple Compass}
+\begin{enumerate}
+	\item Magnetize the needle:
+	\begin{enumerate}
+		\item Hold the needle by its eye.
+      \item Hold the bar magnet horizontally by its north end.
+		\item Stroke the needle from the south end of the magnet, moving from the needle's eye to its point. Repeat 40-50 times.
+    \end{enumerate}    
+    \item Test the needle's magnetism by bringing it near a pin.   
+    \item How can you tell whether the needle has been magnetized?
+	\answerspace{1.0in}   
+    \item In general, describe how two magnetized objects interact with each other.
+    \answerspace{2.0in}
+    \item Determine which end of the needle is north and which is south by placing it next to the bar magnet.   
+	\answerspace{0.6in} 
+    \item Draw a diagram of your needle near the south end of the bar magnet (as pictured below). Label the north (N) and south (S) ends of the needle.
+	\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.80\linewidth]{magnet_needle.jpg} 
+\end{figure}   
+    \item Cut a small piece of cork and push the magnetized needle through it.  
+    \item Label a clear plastic cup with the directions N, E, S, and W.   
+    \item Fill the cup with water.  
+\end{enumerate}
+\begin{minipage}[t]{0.57\textwidth}
+	\vspace{0pt} 
+	\begin{enumerate}[start = 10]
+    \item Float the cork with the needle in the water.
+	\item Rotate the cup so that the needle points to N to complete your simple compass.
+    
+    \item Which end of the needle points toward the north magnetic pole?
+    \answerspace{1.0in}   
+    \item What does this indicate about the polarity of Earth's north magnetic pole?
+    \answerspace{1.0in}    
+	\end{enumerate}   
+\end{minipage}\hfill
+	\begin{minipage}[t]{0.37\textwidth}
+	\vspace{0pt}
+	\includegraphics[width=0.80\linewidth]{cork_water.jpg}  
+    \end{minipage}
+\begin{enumerate}[start = 14]
+	 \item Is the north magnetic pole the same as the geographic North Pole?
+    \answerspace{1.2in}   
+    \item How do navigators account for the difference between magnetic north and geographic north?
+	\answerspace{1.7in}
+\end{enumerate}
+
+\textbf{Part II: Measuring the Magnetic Field of a Bar Magnet}
+\begin{enumerate}
+	\item Open \textit{SPARKvue} and build a page with a Graph display. 
+	\item Connect the magnetic field sensor.
+	\item Display the |Resultant| Magnetic Field Strength (mT) on the $y$-axis of the graph.
+	\item Place the bar magnet on the degree wheel template so that the north pole on the magnet points to the 0 degree line on the template. 
+ 	\item Position the magnetic field sensor's tip at the 0 degree line on the template as shown in the diagram. The closer you place it, the stronger the field will be; keep the sensor the same distance from the magnet and in line with the circle.
+
+	\begin{center}
+\begin{minipage}[h]{0.8\linewidth}
+{\par\centering \includegraphics[width=0.80\linewidth]{magnetic_template.jpg} \par}
+\end{minipage}
+\end{center}
+
+	\item Record the magnetic field strength every 15 degrees starting at the 0 degree mark on the template.
+\begin{center}
+\begin{tabular}{ | M{1.5cm} | M{2.4cm} | M{1.5cm} | M{2.4cm} |}
+ \hline
+ Angle (Degrees) & Magnetic Field (mT) & Angle (Degrees) & Magnetic Field (mT) \\ \hline
+ 0 & & 180 & \\ \hline
+15 & & 195 & \\ \hline
+30 & & 210 & \\ \hline
+45 & & 225 & \\ \hline
+60 & & 240 & \\ \hline
+75 & & 255 & \\ \hline
+90 & & 270 & \\ \hline
+105 & & 285 & \\ \hline
+120 & & 300 & \\ \hline
+135 & & 315 & \\ \hline
+150 & & 330 & \\ \hline
+165 & & 345 & \\ \hline
+\end{tabular}
+\end{center}
+	\item Sketch or print a graph of the magnetic field strength ($y$-axis) vs the angle ($x$-axis). Be sure to include units and a scale on the graph.
+\begin{center}
+\begin{minipage}[h]{1.0\linewidth}
+{\par\centering \includegraphics[width=0.80\linewidth]{blank_graph.png} \par}
+\end{minipage}
+\end{center}
+	\item Find and label the coordinates of the data point with the highest magnetic strength value and the lowest magnetic strength value. 
+	\item What was the highest and lowest magnetic strength value recorded?
+	\answerspace{1.0in}
+	\item At which locations on the magnet was the field strength the greatest? At which locations was it the least?
+	\answerspace{1.0in} 
+	\end{enumerate}
+
+\textbf{Synthesis Questions}
+
+Use available resources to help you answer the following questions.
+\begin{enumerate}
+	\item Is the Earth's magnetic field a static, rigidly set magnetic field like a bar magnet? Explain.
+	\answerspace{1.5in}	
+	
+	\item Humans use compasses to navigate the world. What other animals use Earth's magnetic field? Explain.
+	\answerspace{1.5in}
+	
+	\item How does the magnetic field of the Earth protect the planet in space?
+	\answerspace{1.5in}	
+
+	\item What would cause the magnetic field of Earth to disappear altogether? Explain.
+	\answerspace{1.5in}
+\end{enumerate}
+
+\textbf{Multiple Choice Questions}
+
+Select the best answer or completion to each of the questions or incomplete statements below.
+\begin{enumerate}
+	\item The needle on a compass points north because the Earth's magnetic field resembles a 
+\begin{enumerate}[A.]
+    \item Horseshoe magnet
+    \item Bar magnet % Correct
+    \item Refrigerator magnet
+    \item Single pole magnet
+    \item None of the above
+\end{enumerate}
+
+\item Which statement best describes how the strength and direction of a bar magnet's magnetic field varies around the magnet?
+\begin{enumerate}[A.]
+    \item Field is strongest near the poles and weaker farther away % Correct
+    \item Field is strongest at the midpoint and weakest at the poles
+    \item Field is uniform everywhere
+    \item Field alternates between positive and negative in a regular pattern around the magnet
+    \item None of the above
+\end{enumerate}
+
+\item Which statement best describes the orientation of magnetic field lines around a bar magnet? 
+\begin{enumerate}[A.]
+    \item The magnetic field lines resemble straight lines from the north to the south pole in two dimensions
+    \item The magnetic field lines resemble straight lines from the north to the south pole in three dimensions
+    \item The magnetic field lines form two-dimensional loops from one pole to the other
+    \item The magnetic field lines form three-dimensional loops from one pole to the other % Correct
+    \item The magnetic field lines run perpendicular to the surface of the magnet
+\end{enumerate}
+
+\item Which statement best describes the Earth's magnetic field?
+\begin{enumerate}[A.]
+    \item The Earth's magnetic field is permanent
+    \item The Earth's magnetic field reverses every 1000 years
+    \item The Earth's magnetic field has varied in strength and orientation over time % Correct
+    \item The Earth's magnetic field is static
+    \item The Earth's magnetic field varies in strength and orientation with the lunar cycle
+\end{enumerate}
+
+\item Magnetic declination:
+\begin{enumerate}[A.]
+    \item Varies according to location % Correct
+    \item Is stronger near the South Pole
+    \item Is constant within a hemisphere
+    \item Is stronger near the North Pole
+    \item Is zero at the Equator
+\end{enumerate}
+
+\end{enumerate}
+\newpage
+\begin{center}
+\includegraphics[width=\linewidth]{template.jpg}  
+\end{center}
+\end{document}

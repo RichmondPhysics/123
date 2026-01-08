@@ -1,0 +1,138 @@
+\documentclass[english,twoside]{article}
+
+\input{../labmanual_formatting_commands} %all general latex packages, commands, and definitions now here.
+
+\begin{document}
+
+\Lab{21}{Pointing at Maximum Power for PV}
+
+\renewcommand{\arraystretch}{1.5}
+\setlength{\arrayrulewidth}{0.4mm}
+\setlength{\tabcolsep}{10pt}
+
+\newlength{\myMheight}
+% Create the reference text for measures
+\settoheight{\myMheight}{M}
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+\makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
+
+\textbf{Driving Question}
+
+How do voltage, current, and power change as load (resistance) increases in a series circuit?
+
+Photovoltaic (PV) panels utilize a scientific technology that creates power from solar radiation. Because PV panels are expensive and their power production is limited by the amount of sunlight available, it is important for them to run as efficiently as possible. One way to improve PV panel efficiency is to adjust the resistance in the design of the electrical circuit to create a combination of voltage and current that results in the greatest power output. One must understand how to control a basic circuit in order to design PV arrays that operate as efficiently as possible.
+
+Photovoltaic (PV) power is a clean and renewable energy source that is gaining popularity and is predicted to become a cost-effective source of electricity. To maximize the offset of greenhouse gases and minimize the long-term cost (maximize the return on investment) for PV panels, engineers must be sure that they can design solar systems that generate the maximum amount of power in all conditions. 
+
+Did you know that PV panels do not always produce the same amount of power? For example, the current produced by a PV panel varies depending on the angle between the PV panel and the sun. A PV panel that faces the sun receives more direct solar radiation than one that does not, and this helps to maximize the current flowing through the panel circuit. Although positioning has a great impact on the power output of PV panels, it is not the only factor that determines the amount of power generated. Can you think of another factor in our circuit that might affect power? (voltage, resistance) The electrical equations show us that power (P) is equal to voltage (V) multiplied by current (I), and also that voltage, current, and resistance are all related by Ohm's law. We use these fundamental electrical relationships to be sure that the circuit bringing power from the panel is designed to maximize the power output of the panel at all times. 
+
+Today, we'll be working with PV panels. We will record the current and voltage of our PV circuit using a potentiometer that varies the resistance in the circuit, and calculate the resulting power output. If we can find the point with the highest power output, then we have found the maximum power point and we know our panel is running as efficiently as possible for the existing conditions!
+
+\textbf{Materials}
+\begin{itemize}
+	\item Voltage sensor with red and black banana plug leads
+	\item Current sensor with red and black banana plug leads
+	\item Alligator clip adapters (2), red and black
+	\item Potentiometer
+	\item Solar panel with toothpicks taped behind center line
+	\item Meter stick
+	\item Adjustable lamp with 150-W (incandescent) or 23-W (CFL) bulb
+\end{itemize}
+
+\textbf{Investigate}
+\begin{enumerate}
+	\item Open \textit{SPARKvue} and build a page with two displays. In the left layout choose the Table option. In the right layout choose the Graph option.
+	\item Connect the wireless voltage and current sensors. 
+	\item Insert banana plug leads into sensors if necessary. Use red for (+) and black for (-).
+	\item Display Voltage for the first column in the table and the $x$-axis of the graph. Display Current for the second column of the table and the $y$-axis of the graph. Change the units for Current from amps (A) to milliamps (mA). 
+	\item Change Sampling Rate to 2, and change Sampling Rate Units to seconds. 
+	\item Set the lamp on its side 144 cm from the panel. Use the panel holder from a previous activity to position the panel at $90^\circ$. Turn on the lamp.
+	\item Turn the potentiometer dial clockwise until it stops.
+ 	\item Build the circuit with the voltage sensor, current sensor and potentiometer as shown in Figure \ref{circuit_config}.
+
+		\begin{figure}[h]
+{\par\centering \includegraphics{circuit_config.png} \par}
+	\caption{The electrical circuit configuration to measure voltage and current}
+	\label{circuit_config}
+\end{figure}
+
+	\item Measure the voltage and record its value in Table 1.
+	\item Measure the current and record its value in Table 1.
+	\item Turn the potentiometer counterclockwise, in small increments, until the current in the circuit is approximately 0. Note this position; it will be your furthest turning point. The goal is to get more than 20 evenly-spaced readings, so ideally you will attempt to turn the potentiometer 1/20th of its turning potential for each reading. (Note: If the potentiometer reaches the turning limit before 20 voltage and current readings have been taken in the experiment, use evenly-spaced clockwise turns to take the final readings.) Record current for 0 loads in Table 1.
+	\item Repeat steps 8-10, recording the data for each turn of the potentiometer.
+	\item Alternatively, you can export your data to excel and proceed with the data analyses.
+\end{enumerate}
+\newpage
+\textbf{Data Collection}
+
+\begin{center}
+\begin{tabular}{ | M{2.0cm} | M{2.5cm} | M{2.5cm} | M{2.5cm} |}
+ \hline
+ \multicolumn{4}{|c|}{Table 1: PV Panel Data Collection} \\ \hline
+ Trial \# & \multicolumn{2}{c|}{Collected Data} & Calculated \\ \hline
+ & Voltage (V) & Current (mA) & Power (mW) \\ \hline
+1 & & & \\ \hline
+2 & & & \\ \hline
+3 & & & \\ \hline
+4 & & & \\ \hline
+5 & & & \\ \hline
+6 & & & \\ \hline
+7 & & & \\ \hline
+8 & & & \\ \hline
+9 & & & \\ \hline
+10 & & & \\ \hline
+11 & & & \\ \hline
+12 & & & \\ \hline
+13 & & & \\ \hline
+14 & & & \\ \hline
+15 & & & \\ \hline
+16 & & & \\ \hline
+17 & & & \\ \hline
+18 & & & \\ \hline
+19 & & & \\ \hline
+20 & & & \\ \hline
+& & & \\ \hline
+& & & \\ \hline
+& & & \\ \hline
+& & & \\ \hline
+& & & \\ \hline
+& & & \\ \hline
+\end{tabular}
+\end{center}
+
+	\begin{figure}[h]
+{\par\centering \includegraphics{graph_current_power_voltage.png} \par}
+\end{figure}
+
+\textbf{Analyze}
+\begin{enumerate}
+	\item Use the formula
+	\begin{equation*}
+		P = I \Delta V
+	\end{equation*} 
+	to calculate power for each reading. Enter your answers in Table 1.
+     \item Graph current and power vs. voltage on the graph provided (at the end of the lab). Voltage is on the $x$-axis, current is on the left $y$-axis. Power is on the right $y$-axis. For each variable, create a range on the axis that fits all of the data points.
+     \item On the graph, identify the maximum power point, short circuit current ($I_\text{sc}$), and open circuit voltage ($V_\text{oc}$).
+	\item What was the maximum power produced by your panel?
+	\answerspace{2.5in}
+	\item What is the short circuit current ($I_\text{sc}$, or current when $V=0$), and open circuit voltage ($V_\text{oc}$, or voltage when $I=0$) of your PV circuit?
+	\answerspace{2.5in}
+	\item Do you think a PV panel produces the same amount of power in different weather conditions? Why or why not?
+	\answerspace{2.5in}
+	\item Calculate the efficiency of the solar panel. Can you tell what the material of the solar panel is? 
+	\answerspace{2.5in}
+ 	\item If a cloud covered your panel and lowered the current in the circuit, what would happen to the maximum power point (MPP)? Would it be necessary to adjust the resistance to find a new MPP?
+	\answerspace{2.5in}
+	\item Would it be more efficient for a large field of PV panels to have one MPP tracker for the entire field, or to use many MPPTs for smaller areas of the field? Why or why not?
+	\answerspace{3.0in}
+\end{enumerate}
+
+\textbf{Extend}
+\begin{enumerate}
+	\item In this activity, you measured the light $I$-$V$ curve of a solar cell under a certain illumination condition. How do you think the I-V curve will change under different illumination conditions?
+	\item Measure two $I$-$V$ curves for under different illumination conditions. Find their MPP and calculate their efficiency.
+	\item Obtain a different solar panel and measure the efficiency. Compare your results with the previous one. 
+\end{enumerate}
+\end{document}

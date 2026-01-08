@@ -1,0 +1,171 @@
+\documentclass[english,twoside]{article}
+
+\input{../labmanual_formatting_commands} %all general latex packages, commands, and definitions now here.
+
+\begin{document}
+
+\Lab{17}{Solar Panel Performance}
+
+\renewcommand{\arraystretch}{1.5}
+\setlength{\arrayrulewidth}{0.4mm}
+\setlength{\tabcolsep}{10pt}
+
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+\makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
+
+%\begin{wrapfigure}{r}{0.40\linewidth}
+%  \begin{center}
+%    \includegraphics[width=0.7\linewidth]{angle_of_insolation.png}
+%  \end{center}
+%\end{wrapfigure}
+
+
+\textbf{Driving Question}
+
+How do angle, cloud cover, and dust affect solar panel voltage output?
+Solar panels are a source of alternative energy for homes. As the preferred location for solar panels, rooftops tend to be out of the way, unshaded, and tilted. Owners must consider many factors such as the path the sun follows each day, roof pitch (angle of tilt), and latitude when making installation decisions.
+
+The angle at which sunlight strikes the Earth (angle of insolation) varies with latitude. The sun's angle of insolation is greatest at the equator and decreases towards the poles. If greater angles of insolation result in greater amounts of direct sunlight, how might tilt angle affect solar panel voltage output?
+
+\textbf{Materials}
+\begin{itemize}
+	\item Data collection system	
+	\item Scissors
+	\item Voltage sensor with red and black banana plug leads
+	\item Solar panel
+	\item Adjustable lamp with minimum 60-W (incandescent) or 23-W (CFL) bulb
+	\item Toothpicks (2)
+	\item Ruler	
+	\item Transparent protractor
+	\item $30 \times 30$ cm sheets of wax paper (5)
+	\item $6 \times 6$ cm pieces of cardboard (2)
+	\item $6 \times 14$ cm piece of cardboard (1)
+	\item Tape
+	\item Flour
+\end{itemize}
+
+\textbf{Safety}
+
+Use caution with the lamp. It may become very hot.
+
+\textbf{Consider}
+\begin{enumerate}
+	\item How might tilt angle affect solar panel voltage output?
+	\answerspace{1.3in}
+	\item Do solar panels produce electricity when it is cloudy? Why or why not?
+	\answerspace{1.5in}
+\end{enumerate}
+ 
+\textbf{Investigate Tilt Angle}
+
+\begin{enumerate}
+	\item Open \textit{SPARKvue} and build a page with a graph. 
+	\item Connect the voltage sensor. 
+	\item Attach the solar panel alligator clips to the voltage sensor plugs (match colors). Do not allow red and black to contact.
+	\item Cut a 1-cm deep notch through the long edge of both $6 \times 9$ cm pieces in the center as shown.
+	\item Align the protractor to the notch point on one piece of cardboard. Mark the following angles as shown: $0^\circ$, $15^\circ$, $30^\circ$, $45^\circ$, $60^\circ$, $75^\circ$, $90^\circ$.
+
+{\par\centering \includegraphics[width=0.35\linewidth]{protractor.png} \par}
+
+	\item Build the solar panel holder. Position the labeled piece as shown.
+
+{\par\centering \includegraphics[width=0.40\linewidth]{solar_panel_holder.png} \par}
+
+	\item Tape the toothpicks to the back of the solar panel. Allow 2 cm to extend from the sides as shown.
+
+	\item Set the panel in the holder. Allow wires to come through the opening below the panel.
+
+	\item Place the lamp 30-40 cm away from the panel. Point the lamp towards the open side of the panel holder as shown.
+
+	\item Carefully align the center of the bulb so that it is $45^\circ$ from the middle of the panel's silver center line at $0^\circ$. You will need to
+carefully adjust the height and angle of the lamp to
+accomplish this. Note: The bulb-panel alignment must be at $45^\circ$ as shown.
+
+	\item Turn the lamp on.
+
+	\item Start collecting data.
+
+	\item Use the toothpicks to help you rotate the panel to the angles indicated in the table. Record the voltage for each angle in the table. Complete three runs.
+
+\begin{center}
+\begin{tabular}{ | M{3.0cm} | M{3.0cm} | M{3.0cm} | M{3.0cm} |}
+ \hline
+ \multicolumn{4}{|c|}{Table 1: Voltage produced when light source is set to $45^\circ$} \\ \hline
+ Tilt Angle ($^\circ$) & Voltage (V), Run 1 & Voltage (V), Run 2 & Voltage (V), Run 3 \\ \hline
+ 0 & & & \\[15pt] \hline
+ 15 & & & \\[15pt] \hline
+30 & & & \\[15pt] \hline
+45 & & & \\[15pt] \hline
+60 & & & \\[15pt] \hline
+75 & & & \\[15pt] \hline
+90 & & & \\[15pt] \hline
+\end{tabular}
+\end{center}
+
+	\item Stop collecting data.
+\end{enumerate}
+\newpage
+\textbf{Analyze Tilt Angle}
+	
+\begin{enumerate}
+ 	\item Which panel tilt angle produced the highest voltage? How does this panel angle compare to the lamp angle (set at $45^\circ$)?
+	\answerspace{2.5in}
+	\item How does panel tilt angle affect voltage produced? Use data to support your answer.
+	\answerspace{2.5in}
+	\item Predict the panel tilt angle that will produce the highest voltage when the lamp is positioned at $60^\circ$ instead of $45^\circ$. Explain your prediction.
+	\answerspace{2.5in}
+\end{enumerate}
+
+\textbf{Investigate Cloud Cover}
+
+\begin{enumerate}
+	\item Allow the panel to rest in a stable position in the holder.
+
+	\item Turn the lamp on.
+
+	\item Start collecting data.
+
+	\item The first data point contains no layers of clouds as a control. Record the first reading in the table below.
+
+	\item Hold a sheet of wax paper 20 cm above the panel to simulate a thin cloud layer. Record the voltage for 1 layer.
+
+	\item Increase layers one at a time until you reach 5 layers. Record voltage for each new cloud layer.
+
+\begin{center}
+\begin{tabular}{ | M{3.0cm} | M{3.0cm} |}
+\hline
+\multicolumn{2}{|c|}{Table 2: Voltage with increasing cloud cover} \\ \hline
+	Number of Layers & Voltage (V) \\ \hline
+ 0 & \\[15pt] \hline
+ 1 & \\[15pt] \hline
+2 & \\[15pt] \hline
+3 & \\[15pt] \hline
+4 & \\[15pt] \hline
+5 & \\[15pt] \hline
+\end{tabular}
+\end{center}
+
+	\item Stop collecting data.
+
+	\item Save the cardboard panel holder for future activities.
+\end{enumerate}
+
+\textbf{Analyze Cloud Cover}
+\begin{enumerate}
+	\item What happens to voltage as the cloud layer thickens? Use data to support your answer.
+	\answerspace{2.5in}
+	\item Suppose you live where it rains frequently and latitude is between the north pole and the equator. What advice would you give your neighbors about how to set up rooftop solar panels for the best voltage output?
+	\answerspace{2.5in}
+	\item Does solar panel voltage output depend on the time of year? Why or why not?
+	\answerspace{2.5in}
+\end{enumerate}
+ 
+\textbf{Extend}
+
+\begin{enumerate}
+	\item Write a testable question to investigate the effect of dust on voltage output. Design an experiment to answer your testable question. Use flour to simulate dust. After completing your investigation, compare another group's experimental design with your own. Which design better reflects a scientific approach? Why? Which better models real-world conditions? Why?
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,107 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{makecell} 
+\usepackage{pdflscape}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{center}
+    \large Home Energy Audit \\[6pt]
+	\item Due: Thursday, 22 January
+\end{center}
+
+\vspace{1em}
+
+\noindent \textbf{Learning Objectives:} You will learn about your personal use of electric energy. 
+
+\vspace{0.5em}
+
+\noindent \textbf{Background Information:} The accompanying sheet lists the power consumed by typical appliances. 
+
+\vspace{1em}
+
+\noindent \textbf{Instructions:}
+\begin{enumerate}
+    \item Using the table on the reverse side, fill in the power consumption for active/charging (column b), idle/energy save mode (column e), and off (column h) for \underline{ten appliances} where you live.
+    \item Write in the number of hours per week that the appliance is active/charging (column c), idle/energy save mode (column f), and off (column i). If the device is unplugged, \underline{do not} include that in the ``off'' hours. There are a total of 168 hours in a week.
+    \item Calculate the energy consumed by every appliance for each of its states of operation during a week. (For example: multiply column b by column c to get column d; convert your answer to kWh).
+    \item Sum each of the energy columns:
+    \begin{enumerate}
+        \item Add the total energy consumed by all appliances in their active state (column d).
+        \item Add the total energy consumed by all appliances in their idle state (column g).
+        \item Add the total energy consumed by all appliances in their off state (column j).
+        \item Add the previous three totals to calculate the total energy consumed in all states (column k).
+    \end{enumerate}
+    \item Energy consumed by appliances in their ``off'' state is wasted and could be eliminated by unplugging the appliance or by putting it on a power strip with an off-switch.
+    \item Calculate the cost of the energy used (column l) by multiplying column k by \$0.13/kWh (the cost of electricity in Richmond).
+    \item Calculate the fraction (as a percent) of the total energy consumed by your appliances that is wasted (see equation below the table).
+\end{enumerate}
+
+\vspace{1em}
+
+\begin{landscape}
+\begin{table}[htbp]
+\centering
+\small
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{1.25}
+
+% Centered fixed-width column type
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+\begin{tabular}{|C{3.0cm}|C{1.5cm}|C{1.8cm}|C{1.7cm}|C{1.5cm}|C{1.9cm}|C{1.7cm}|C{1.5cm}|C{1.9cm}|C{1.7cm}|C{1.9cm}|C{1.6cm}|}
+\hline
+\textbf{(a)} & \textbf{(b)} & \textbf{(c)} & \textbf{(d)} & \textbf{(e)} & \textbf{(f)} & \textbf{(g)} & \textbf{(h)} & \textbf{(i)} & \textbf{(j)} & \textbf{(k)} & \textbf{(l)} \\
+\hline
+\textbf{Appliance} & \textbf{Active} & \textbf{On-time} & \textbf{Energy} & \textbf{Idle} & \textbf{Idle Time} & \textbf{Energy} & \textbf{Off} & \textbf{Off Time} & \textbf{Energy} & \textbf{Total} & \textbf{Cost} \\
+ & (W) & (hrs) & (kWh) & (W) & (hrs) & (kWh) & (W) & (hrs) & (kWh) & (kWh) & (\$) \\
+\hline
+Example Device & 6 & 21 & 0.126 & 3 & 35 & 0.105 & 0.4 & 112 & 0.045 & 0.276 & 0.036 \\
+\hline
+& & & & & & & & & & & \\
+\hline
+& & & & & & & & & & & \\
+\hline
+& & & & & & & & & & & \\
+\hline
+& & & & & & & & & & & \\
+\hline
+& & & & & & & & & & & \\
+\hline
+& & & & & & & & & & & \\
+\hline
+& & & & & & & & & & & \\
+\hline
+& & & & & & & & & & & \\
+\hline
+& & & & & & & & & & & \\
+\hline
+& & & & & & & & & & & \\
+\hline
+\textbf{Total} & & & & & & & & & & & \\
+\hline
+\end{tabular}
+\end{table}
+
+\vspace{1.2em}
+
+\noindent\textbf{Fraction of energy lost due to vampire loads:}
+\[
+\text{Fraction Lost (\%)} =
+\frac{\text{Total ``off'' energy (kWh)}}
+{\text{Total Active (kWh) + Idle (kWh) + Off (kWh)}}
+\times 100\%
+\]
+
+
+
+\end{landscape}
+
+
+\end{document}
+

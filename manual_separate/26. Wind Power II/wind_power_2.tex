@@ -1,0 +1,192 @@
+\documentclass[english,twoside]{article}
+
+\input{../labmanual_formatting_commands} %all general latex packages, commands, and definitions now here.
+
+\begin{document}
+
+\Lab{26}{Wind Power 2: Blade Length, Number, and Pitch}
+
+\renewcommand{\arraystretch}{1.5}
+\setlength{\arrayrulewidth}{0.4mm}
+\setlength{\tabcolsep}{10pt}
+
+\newlength{\myMheight}
+% Create the reference text for measures
+\settoheight{\myMheight}{M}
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+\makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
+
+\textbf{Driving Question}
+
+What number of wind turbine blades produces the most power? What is the optimal blade length? Which blade pitch is most efficient?
+
+Some people think more wind turbine blades will produce more electricity, but blades can be expensive. The increase in electricity from 1 blade to 2 blades in an efficient system is between $20--60\%$. However, when you increase from 2 blades to 3, you only get between $10-15\%$ increase. You must also factor in the additional cost of reinforcing the turbine and tower as more blades are added. Does the increase in electricity produced from each additional blade offset the higher cost of adding more blades?
+
+\textbf{Materials}
+\begin{itemize}
+	\item Wind turbine with short blades (6) \& long blades (6)	
+	\item 33-$\Omega$ resistor
+	\item Voltage sensor with red and black banana plug leads
+	\item Current sensor with red and black banana plug leads
+	\item Alligator clip adapters (2, black)
+	\item Alligator clip leads (2, black and green)
+	\item Masking tape
+	\item Meter stick
+	\item Textbooks for weight (2)
+	\item Box fan, 3 or more speeds (same fan as previous activity)
+\end{itemize}
+
+\textbf{Safety}
+
+Follow these important safety precautions in addition to your regular classroom procedures:
+\begin{itemize}
+	\item Wear safety goggles throughout the experiment.
+	\item Tie back long hair, remove dangling jewelry, secure loose clothing, and roll up long sleeves.
+	\item Always make sure blades are properly inserted in the turbine and screws are secure before turning on the fan.
+\end{itemize}
+
+\textbf{Consider}
+\begin{enumerate}
+	\item Predict the blade length that will produce the highest power.
+	\begin{enumerate}[(a)]
+		\item Long
+		\item Short
+	\end{enumerate}
+	\item Predict the number of blades that will produce the highest power.
+	\begin{enumerate}[(a)]
+		\item Two
+		\item Three
+		\item Six
+	\end{enumerate}
+	\item Observe the pitch angles printed on the blades. Predict the blade pitch that will produce the highest power.
+	\begin{enumerate}[(a)]
+		\item $10^\circ$
+		\item $20^\circ$
+		\item A combination of $10^\circ$ and $20^\circ$
+	\end{enumerate}
+\end{enumerate}
+
+\textbf{Investigate Blade Length}
+ 
+ \begin{enumerate}
+	\item Open \textit{SPARKvue} and build a page with two graphs.
+	\item Connect the voltage and current sensors.
+	\item Display Voltage on the $y$-axis of one graph and Current on the $y$-axis of the other graph.
+	\item Remove the turbine cap and loosen the wing nut. Use the short blades to assemble the turbine according to the illustration. Set blades to $20^\circ$ with leaf logos facing the fan.
+	\item Place the turbine at the optimal distance, recorded on a piece of tape in a previous activity. Add textbooks to the base.
+\end{enumerate}
+ \begin{center}
+    \includegraphics[width=0.7\textwidth]{wind_power_2_setup_1.png}
+  \end{center}
+\begin{enumerate}[start=6]
+	\item Insert banana plug leads into sensors if necessary. Use red for (+) and black for (-).
+	\item Attach alligator clip leads to the motor terminals. Assemble the red voltage sensor lead, red current sensor lead, and green turbine wire as shown.
+	\item Assemble the black voltage sensor lead, black alligator clip adapter, black turbine wire, and resistor as shown.
+	\item Assemble the open end of the resistor, black alligator clip adapter, and black current sensor lead as shown.
+\end{enumerate}
+	  \begin{center}
+    \includegraphics[width=0.48\textwidth]{wind_power_2_setup_2.png}
+  \end{center}
+\begin{enumerate}[start=10]
+	\item Turn the fan on to its optimal speed recorded in a previous activity.
+	\item Start collecting data.
+	\item Observe voltage and current over one minute. Record the highest observed values for each in Table 1.
+ \begin{center}
+\begin{tabular}{ | M{2.0cm} | M{2.5cm} |  M{2.5cm} |  M{2.5cm} |}
+ \hline
+	\multicolumn{4}{|c|}{Table 1: Highest Power for Blade Length} \\ \hline
+ Blade Length & Highest Voltage (V) & Highest Current (mA) & Power (mW) \\ \hline
+ Short & & & \\[15pt] \hline
+ Long & & & \\[15pt] \hline
+\end{tabular}
+\end{center}
+	\item Turn the fan off.
+	\item Use the equation
+	\begin{equation*}
+		P = I \Delta V
+	\end{equation*}
+ to calculate power produced; show your work in the space provided. Enter your answers in Table 1.
+	\answerspace{1.5in}
+	\item Remove the turbine cap and loosen the wing nut. Rearrange the turbine to have six long blades at $20^\circ$, leaf logos facing the fan.
+	\item Repeat the steps above and record the results in Table 1.
+	\item Use the power output to identify the optimum blade length. Circle the optimum blade length in Table 1.
+	\item Rearrange the turbine to have 6 blades of optimal length (if necessary).
+\end{enumerate}
+
+\textbf{Investigate Number of Blades}
+\begin{enumerate}
+	\item Set up the turbine with optimal blade length and distance, leaf logos facing the fan at $20^\circ$. Add textbooks to the base and turn on the fan to its optimal speed.
+	\item Observe voltage and current for 6 blades over one minute. Record the highest voltage and current in Table 2.
+\begin{center}
+\begin{tabular}{ | M{2.5cm} | M{2.5cm} | M{2.5cm} | M{2.5cm} |}
+ \hline
+	\multicolumn{4}{|c|}{Table 2: Highest Power for Number of Blades} \\ \hline
+ Number of Blades & Highest Voltage (V) & Highest Current (mA) & Power (mW) \\ \hline
+ 6 & & & \\[15pt] \hline
+ 3 & & & \\[15pt] \hline
+2 & & & \\[15pt] \hline
+\end{tabular}
+\end{center}
+	\item Turn the fan off.
+	\item Remove the turbine cap and loosen the wing nut. Repeat the steps above first with 3 blades and then with 2 blades arranged in the positions shown. Record results in Table 2.
+ 	\item Calculate the power produced for each number of blades and enter it in Table 2.
+	\answerspace{1.5in}
+	\item Use the power output to identify the optimum number of blades. Circle the optimum number of blades in Table 2.
+	\item Rearrange the turbine to have the optimum number of blades before moving on.
+\end{enumerate}
+
+\textbf{Investigate Blade Pitch}
+\begin{enumerate}
+	\item Place the turbine with the optimum number of blades at the optimum distance. Add textbooks.
+	\item Set all blades to $10^\circ$, leaf logos facing the fan. Turn the fan on at optimum speed.
+	\item Find the highest voltage and current over 1 minute. Record results in Table 3.
+\begin{center}
+\begin{tabular}{ | M{2.5cm} | M{2.5cm} | M{2.5cm} | M{2.5cm} |}
+ \hline
+	\multicolumn{4}{|c|}{Table 3: Highest Power for Blade Pitch} \\ \hline
+ Blade Pitch & Highest Voltage (V) & Highest Current (mA) & Power (mW) \\ \hline
+ $10^\circ$ & & & \\[15pt] \hline
+ $20^\circ$ & & & \\[15pt] \hline
+ & & & \\[15pt] \hline
+\end{tabular}
+\end{center}
+	\item Turn the fan off.
+	\item Repeat the steps above for a blade pitch of $20^\circ$.
+	\item Enter a blade pitch combination of your own in Table 3, in the blank Blade Pitch cell. Repeat the steps above with your combination.
+	\item Calculate the power produced for each blade pitch and enter it in Table 3.
+	\answerspace{1.5in}
+	\item Use the power output to identify the optimum blade pitch. Circle the optimum blade pitch in Table 3.
+	\item Record the optimum blade length, blade pitch, and number of blades on the piece of tape. Store the tape on the fan for future activities.
+\end{enumerate}
+
+\textbf{Analyze}
+
+\begin{enumerate}
+	\item What number of blades produced the optimum power? How does your prediction compare to your results?
+	\answerspace{1.5in}
+	\item Propose an explanation for why 1, 4, or 5 blades were not tested.
+	\answerspace{1.5in}
+   \item How does your prediction for blade length compare to your results? Use data to support your answer.
+	\answerspace{1.5in}
+	\item How does your prediction for blade pitch compare to your results? Use data to support your answer.
+	\answerspace{1.5in}
+\end{enumerate}
+
+\textbf{Extend}
+
+\begin{enumerate}
+	\item You were asked to explain why 1, 4, or 5 blades were not tested. Design an experiment to verify your explanation.
+\end{enumerate}
+\end{document}
+
+
+
+
+
+
+
+
+
+

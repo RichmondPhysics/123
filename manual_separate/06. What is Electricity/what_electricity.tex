@@ -1,0 +1,141 @@
+\documentclass[english,twoside]{article}
+
+\input{../labmanual_formatting_commands} %all general latex packages, commands, and definitions now here.
+
+\begin{document}
+
+\Lab{6}{What is Electricity?}
+
+\renewcommand{\arraystretch}{1.5}
+\setlength{\arrayrulewidth}{0.4mm}
+\setlength{\tabcolsep}{10pt}
+
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+\makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
+
+\textbf{Driving Question}
+
+How do voltage and current change as electricity flows through a circuit?
+
+Electricity involves the motion of charged particles, such as electrons, through a conductor. For a circuit to work, there must be both a push to move charges and a path for them to follow.
+
+Voltage is like the ``push'' or electrical pressure that makes charges move. It exists when there is a difference in electric potential between two points. Charges naturally move from higher potential to lower potential, just as water flows downhill. If there is no difference, there is no voltage to drive the flow.
+
+Current is the rate at which electric charge flows through a circuit. A larger current means more charge passes a point each second, which often makes devices like light bulbs shine more brightly. Current depends on both the available voltage and how easy it is for charges to move through the circuit.
+
+Resistance is anything in the circuit that limits or slows the flow of charge. Thin wires, long wires, or materials that conduct poorly all add resistance. Higher resistance means less current for the same voltage. For example, a narrow wire makes it harder for charges to pass, so fewer reach the bulb.
+
+In summary: voltage pushes, resistance resists, and current flows. Together, these three ideas explain how circuits deliver energy to devices.
+
+\textbf{Materials}
+\begin{itemize}
+	\item Voltage sensor with red and black banana plug leads
+	\item Current sensor with red and black banana plug leads
+	\item Alligator clip adapters (2), red and black
+	\item Solar panel
+	\item Buzzer
+ 	\item Adjustable lamp with minimum 60-W (incandescent) or 23-W (CFL) bulb
+	\item Ruler or meter stick
+	\item LED and DC motor
+\end{itemize} 
+
+\textbf{Consider}
+\begin{enumerate}
+	\item Electricity is made of a flow of:
+	\begin{enumerate}[A.]
+		\item Energy
+		\item Atoms
+		\item Matter
+		\item Electrons
+ 	\end{enumerate}
+	\item A scientist measures river flow rate to find out how much water is passing by. This is most like measuring:
+	\begin{enumerate}[A.]
+		\item Electric potential
+		\item Current
+		\item Resistance
+		\item Voltage
+	\end{enumerate}
+     \item Limited water flow in a twisted garden hose is most similar to \rule{4cm}{0.15mm} in a circuit.
+	\begin{enumerate}[A.]
+		\item Electric potential
+		\item Current
+		\item Resistance
+		\item Voltage
+	\end{enumerate}
+	\item Predict the relationship between voltage and current:
+	\begin{enumerate}[A.]
+		\item As voltage increases, current increases
+		\item As voltage increases, current decreases
+		\item As voltage increases, current stays the same
+	\end{enumerate}
+    \item Explain the reasoning behind your prediction in \#4.
+	\answerspace{1.5in}
+\end{enumerate}
+\newpage
+\textbf{Investigate}
+\begin{enumerate}
+	\item Build a page with two graphs.
+	\item Connect the current and voltage sensors.
+	\item Display Current on the $y$-axis of the first graph and Voltage on the $y$-axis of the second graph. Change the units for Current from amps (A) to milliamps (mA).
+	\item Add banana plug leads to the sensors if needed. Use red for (+) and black for (-).
+	\item Build a circuit with the solar panel, buzzer, and voltage sensor as shown in the figure below.
+	\item Start collecting data.
+
+\begin{center}
+	\includegraphics[height=0.25\linewidth]{circuit_1.jpg}
+\end{center}
+
+	\item If you do not hear the buzzer, review the diagram.
+	\item Watch the voltage and current readings for at least 30 seconds. Then stop data collections.
+	\item Record the average current and voltage values in the table. 
+	\item Now, turn the lamp on so that it is directed at the panel and about 15-20 cm away from it.
+	\item Start collecting data and repeat the measurements above. Record the average current and voltage values in the table.
+	\item Finally, connect the ammeter so that it is on the opposite side of the buzzer. Be careful not to move the solar panel or lamp during this process.
+	
+\begin{center}
+	\includegraphics[height=0.25\linewidth]{circuit_2.jpg}
+\end{center}
+	
+	\item Start collecting data and repeat the measurements above .Record the average current and voltage values in the table.
+	\item Stop collecting data, turn off the lamp, and take the circuit apart.
+
+\begin{center}
+\begin{tabular}{| M{6.0cm} | M{2.0cm} | M{2.0cm} | M{2.0cm} |} 
+ \hline
+ \multicolumn{4}{|c|}{Table: Voltage, current, and resistance} \\ \hline
+ Circuit Tested & \makecell{Voltage \\ (V)} & \makecell{Current \\ (mA)} & \makecell{Resistance \\ ($\Omega$)} \\ \hline
+{Panel and buzzer} & & & \\[15pt] \hline
+\makecell{Panel and buzzer \\ (with more light)} & & & \\[15pt] \hline
+\makecell{Panel and buzzer \\ (with more light, new sensor location)} & & &  \\[15pt] \hline
+\end{tabular}
+\end{center}
+\end{enumerate}
+
+\textbf{Analyze}
+\begin{enumerate}
+	\item Use the following formula to calculate resistance for each circuit tested. Enter your answers in the table.
+\begin{equation*}
+	\text{Resistance} \; (\Omega) = [\text{Voltage} \; (\text{V}) \div \text{Current} \; (\text{mA})] \times 1000
+\end{equation*}
+	\item Voltage is produced at the solar panel. How does light distance affect voltage? Support your answer with data.
+	\answerspace{1.5in}
+	\item Did you correctly predict the relationship between voltage and current? Support your answer with data.
+	\answerspace{1.5in}
+	\item What happens to current when resistance decreases? Support your answer with data.
+	\answerspace{1.5in}
+	\item Does current change when measured at different points within this circuit? Support your answer with data.
+	\answerspace{1.5in}
+	\item If current increases within a circuit, what will happen to the flow of electrons?
+	\answerspace{1.5in}
+	\item If resistance increases within a circuit, what will happen to the flow of electrons?
+	\answerspace{1.5in}
+\end{enumerate}
+ 
+\textbf{Extend}
+\begin{enumerate}
+	\item Write a testable question to investigate the effects of other devices on a circuit's voltage, current, and resistance. Other devices available include an LED and a DC motor. Get your instructor's approval before moving on with your experiment.
+\end{enumerate}
+
+\end{document}

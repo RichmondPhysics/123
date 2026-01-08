@@ -1,0 +1,97 @@
+\documentclass[english,twoside]{article}
+
+\input{../labmanual_formatting_commands} %all general latex packages, commands, and definitions now here.
+
+\begin{document}
+
+\Lab{19}{Heat and Solar Panels I}
+
+\renewcommand{\arraystretch}{1.5}
+\setlength{\arrayrulewidth}{0.4mm}
+\setlength{\tabcolsep}{10pt}
+
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+\makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
+
+\textbf{Driving Question}
+
+How does temperature affect solar panel current output?
+
+When matter heats up, particles including electrons begin to move faster. How might particle motion affect electric current produced in a solar panel?
+
+Photons that make up light knock electrons off atoms. The loose electrons are drawn into a stream of electric current. As more light hits the panel, more electrons are available to increase current, but every other particle in the panel also moves faster when heat increases. If you are trying to maximize current, what is the best balance between amount of light and heat if electrons are trying to flow from Point A to Point B?
+
+	\begin{figure}[h]
+{\par\centering \includegraphics{heat_energy_ke.png} \par}
+\end{figure}
+
+\textbf{Materials}
+\begin{itemize}
+	\item Temperature sensor
+	\item Current sensor with red and black banana plugs
+	\item Solar panel with toothpicks behind center line, in cold storage (Chilled in a refrigerator or ice bath for at least 30 minutes; if using an ice bath, do not allow panel to directly contact water. Do not use a freezer.)
+	\item Adjustable lamp with 60-W or higher incandescent bulb (A CFL bulb is not appropriate for this activity)
+	\item Solar panel holder from a previous activity
+	\item Ruler or meter stick
+	\item Tape
+\end{itemize}
+
+\textbf{Consider}
+\begin{enumerate}
+	\item The solar panel will generate the most current in \rule{4cm}{0.15mm} 	temperatures.
+	\begin{enumerate}[A.]
+		\item Colder
+		\item Warmer
+	\end{enumerate}
+	\item Explain the basis of your prediction.
+	\answerspace{3.0in}
+	\item Is it possible to have high solar intensity with low temperatures? Why or why not?
+	\answerspace{3.0in}
+	\item List several factors that could affect the temperature of a rooftop solar panel.
+	\answerspace{2.0in}
+\end{enumerate}
+ \newpage
+\textbf{Investigate}
+\begin{enumerate}
+	\item Open \textit{SPARKvue} and build a page with a graph. 
+	\item Connect the temperature and current sensors. 
+	\item Display Current (mA) on the $y$-axis of the graph and Temperature on the $x$-axis.  
+	\item Insert banana plug leads into the current sensor if necessary.
+	\item Tape the solar panel holder to the table.
+	\item Set the lamp horizontally on the table 20 cm from the panel holder. Turn the lamp on.
+	{\par\centering \includegraphics{solar_panel_heat.png} \par}
+	\item Prepare two 5-cm pieces of tape. Complete Steps 8--10 as quickly as possible.
+	\item Remove the panel from cold storage. Attach the panel alligator clips to the current sensor leads. Match wire colors.
+	\item Set the panel in the holder at $90^\circ$. Firmly tape the temperature sensor directly to the back of the panel as shown. Allow the sensor to rest on the panel holder.
+	
+%{\par\centering \includegraphics{solar_panels/solar_panel_heat.png} \par}
+
+	\item Start recording data.
+	\item Continue collecting data for 10--20 minutes, or until either temperature stops increasing or current shows at least 8 stable minimum-maximum cycles. Answer the following questions while you collect data.
+
+%{\par\centering \includegraphics{solar_panels/current_stable_cycles.png} \par}
+
+	\item Describe how electron motion changes as the solar panel warms up.
+	\answerspace{1.5in}
+	\item Why are horizontal (side to side) gaps between minimum and maximum data points along the $x$-axis getting closer together?
+	\answerspace{1.5in}
+	\item After data collection has stopped, scale the graph. Sketch your results in the graph below. Remember to add labels and numbers to the axes.
+	
+{\par\centering \includegraphics{blank_graph.png} \par}
+\end{enumerate}
+
+\textbf{Analyze}
+\begin{enumerate}
+	\item Explain the relationship between current and temperature.
+	\answerspace{3.0in}
+\end{enumerate} 
+ 
+\textbf{Extend}
+
+\begin{enumerate}
+	\item Write a testable question to explore the effects of higher levels of heat on solar panel current output. Design and conduct an experiment to answer your testable question. Remember to keep light intensity constant in your experimental design and use a safe source of heat. Get approval from your instructor before conducting your experiment.
+\end{enumerate}
+
+\end{document}

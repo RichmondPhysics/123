@@ -1,0 +1,193 @@
+\documentclass[english,twoside]{article}
+
+\input{../labmanual_formatting_commands} %all general latex packages, commands, and definitions now here.
+
+\begin{document}
+
+\Lab{22}{Load and Solar Panels}
+
+\renewcommand{\arraystretch}{1.5}
+\setlength{\arrayrulewidth}{0.4mm}
+\setlength{\tabcolsep}{10pt}
+
+\newlength{\myMheight}
+% Create the reference text for measures
+\settoheight{\myMheight}{M}
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+\makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
+
+\textbf{Driving Question}
+
+How do voltage, current, resistance, and power change as load increases in a series circuit?
+
+Power is the rate at which electrical energy is either being produced or used up. A device in a circuit that uses power is called a load. Some devices add a higher load to a circuit than others. For example, lights may dim when a high load device like an air conditioner turns on. It uses a lot of current when it runs, reducing the power available to lights and everything else on the same circuit. In addition, some devices may release heat when they run. Heat is a sign that a device has a high load and is using a lot of power.
+
+Plugging too many devices into an electrical outlet is unsafe. When too much power moves through wires, a circuit overload may occur. When designing a solar panel system for a home, consider the total power needs of all loads that will be connected to the system.
+
+ 
+\textbf{Materials}
+\begin{itemize}
+	\item Voltage sensor with red and black banana plug leads
+	\item Current sensor with red and black banana plug leads
+	\item Alligator clip adapters (2), red and black
+	\item Alligator clip leads (2), black and green
+	\item Solar panel with toothpicks taped behind center line
+	\item LED
+	\item Buzzer
+	\item 33-$\Omega$ Resistor
+	\item Ruler or meter stick
+	\item Adjustable lamp with a minimum 60-W (incandescent) or 23-W (CFL) bulb
+	\item Solar panel from a previous activity
+\end{itemize}
+
+\textbf{Safety}
+
+Caution: Lamp may become very hot.
+
+\textbf{Consider}
+\begin{enumerate}
+	\item Which device most likely has the highest load when it is running?
+	\begin{enumerate}[A.]
+		\item Cell phone charger
+		\item PASCO sensor
+		\item Electric mixer or blender
+		\item Toaster
+	\end{enumerate}
+	\item Predict what will happen to the amount of voltage used as more loads are added to a circuit.
+	\answerspace{1.0in}
+	\item Predict what will happen to the total amount of resistance in a circuit as more loads are added.
+	\answerspace{1.0in}
+	\item Predict what will happen to the amount of solar power used as more loads are added to a circuit.
+	\answerspace{1.0in}
+\end{enumerate}
+
+\textbf{Investigate}
+\begin{enumerate}
+	\item Open \textit{SPARKvue} and build a page with two Graph displays. 
+	\item Connect the wireless voltage and current sensors.
+	\item Display Voltage (V) on the $y$-axis of the first graph and Current (mA) on the $y$-axis of the second graph.
+	\item Build the zero load circuit with the voltage sensor shown in Figure \ref{zero_load}. Refer to the end of the lab for all circuit diagrams.
+	\item Set the lamp on its side 30 cm from the panel. Use the panel holder from a previous activity to position the panel at $90^\circ$.
+	\item Turn on the lamp and start collecting data.
+	\item Find the highest voltage reading over 30 seconds. (You will use this method to collect data throughout this activity.)
+	\item Record the voltage in Table 1 for 0 loads.
+	\item Repeat Steps 7--9 replacing the voltage sensor with the current sensor. Record current for 0 loads in Table 1.
+	\item Build the 1-load resistor circuit shown in Figure \ref{one_load}a.
+	\item Find and record the highest 1-load voltage in Table 1.
+	\item Re-arrange the circuit as shown in Figure \ref{one_load}b  to measure and record the highest 1-load current in Table 1.
+	\item Inspect the LED. The long end that extends from the larger piece of metal inside the dome is the (+) side.
+	\item Replace the resistor with the LED. Set up the circuit to record voltage as shown in Figure \ref{one_load_led}. Enter voltage in Table 1.
+	\item Replace the LED with the buzzer. Set up the circuits to record voltage and current as before. Enter voltage and current for the 1-load buzzer circuit in Table 1.
+	\item Build a 2-load circuit as shown in Figure \ref{two_load_voltage}. Attach the voltage sensor at each of the three locations shown. Record voltages for 2 loads at each location in Table 1.
+	\item Set up the circuit to measure current in 3 locations as shown in Figure \ref{two_load_current}. Enter currents for each location in Table 1.
+	
+	\item Build a 3-load circuit as shown in Figure \ref{three_load_voltage}. Attach the voltage sensor at each of the four locations shown. Record voltages for 3 loads at each location in Table 1.
+\item Set up the circuit to measure current in 4 locations as shown in Figure \ref{three_load_current}. Enter currents for each location in Table 1.
+\item Turn the lamp off.
+\end{enumerate}
+
+\begin{center}
+\begin{tabular}{ | M{2.5cm} | M{2.0cm} | M{2.0cm} | M{2.5cm} | M{2.0cm} | }
+ \hline
+ \multicolumn{5}{|c|}{Table 1: Load Data} \\ \hline
+ Number of Loads & Voltage (V) & Current (mA) & Resistance ($\Omega$) & Power (mW) \\ \hline
+ 0 & & & & \\[10pt] \hline
+ 1, Resistor & & & & \\[10pt] \hline
+ 1, LED & & & & \\[10pt] \hline
+ 1, Buzzer & & & & \\[10pt] \hline
+ 2, Location I & & & & \\[10pt] \hline
+ 2, Location II & & & & \\[10pt] \hline
+2, Location III (circuit total) & & & & \\[10pt] \hline
+3, Location I & & & & \\[10pt] \hline
+3, Location II & & & & \\[10pt] \hline
+3, Location III & & & & \\[10pt] \hline
+3, Location IV (circuit total) & & & & \\[10pt] \hline
+\end{tabular}
+\end{center} 
+
+
+\textbf{Analyze}
+\begin{enumerate}
+	\item Use the following formula to calculate resistance for each number of loads. Enter your answers in Table 1 under Resistance.
+\begin{equation*}
+	\text{Resistance }(\Omega) = [\text{Voltage (V)}/\text{Current (mA)}] \times 1000
+\end{equation*}
+	\item Use the following formula to calculate power for each number of loads. Enter your answers in Table 1 under Power.
+\begin{equation*}
+	\text{Power (mW)} = \text{Voltage (V)} \times \text{Current (mA)}
+\end{equation*}
+\newpage
+	\item According to your 2- and 3-load circuit data, the total	\rule{4cm}{0.15mm} equals the sum of all loads.
+	\begin{enumerate}[A.]
+		\item Current
+		\item Voltage
+	\end{enumerate}
+	\item  According to your 2- and 3-load circuit data, total \rule{4cm}{0.15mm} 	is equal to each load's individual value.
+	\begin{enumerate}[A.]
+		\item Current
+		\item Voltage
+	\end{enumerate}
+	\item According to your data, what happens to voltage when a circuit changes from no load to one or more loads such as a resistor, LED, or buzzer?
+	\begin{enumerate}[A.]
+		\item Increases
+		\item Decreases
+		\item Stays the same as no load
+ 	\end{enumerate}
+	\item According to your data, what happens to current when a circuit changes from no load to one or more loads such as a resistor, LED, or buzzer?
+	\begin{enumerate}[A.]
+		\item Increases
+		\item Decreases
+		\item Stays the same as no load
+	\end{enumerate}
+  	\item Were your predictions for voltage, resistance, and power used correct? Support your answer with data.
+	\answerspace{1.2in}
+	\item  Why would a solar panel customer need to know power usage patterns in their household before purchasing a solar panel system?
+	\answerspace{1.2in}
+\end{enumerate}
+\textbf{Extend}
+\begin{enumerate}
+	\item In this activity, you set up a series circuit. Another way to set up a circuit is called parallel. Research how parallel circuits are built then redesign this experiment to discover how voltage, current, and resistance behave with loads in a parallel circuit. Get your instructor's approval before performing your experiment.
+\end{enumerate}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.45\linewidth]{zero_load.png} 
+	\caption{Zero load circuit for voltage or current sensor.}
+	\label{zero_load}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+\includegraphics[width=0.35\linewidth]{one_load_resistor.png} 
+\caption{One-load resistor circuit for (a) voltage sensor and (b) current sensor.}
+\label{one_load}
+
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.32\linewidth]{two_load_voltage.png} 
+	\caption{Two-load circuit for three voltages.}
+	\label{two_load_voltage}
+\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.40\linewidth]{two_load_current.png} 
+	\caption{Two-load circuit for three currents.}
+	\label{two_load_current}
+\end{figure}
+	\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.30\linewidth]{three_load_voltage.png} 
+	\caption{Three-load circuit for four voltages.}
+	\label{three_load_voltage}
+\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.75\linewidth]{three_load_current.png} 
+	\caption{Three-load circuit for four currents.}
+	\label{three_load_current}
+\end{figure}
+
+\end{document}

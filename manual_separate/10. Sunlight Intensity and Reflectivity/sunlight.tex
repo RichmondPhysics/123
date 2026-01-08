@@ -1,0 +1,259 @@
+\documentclass[english,twoside]{article}
+
+\input{../labmanual_formatting_commands} %all general latex packages, commands, and definitions now here.
+
+\begin{document}
+
+\Lab{10}{Sunlight Intensity and Reflectivity}
+
+\renewcommand{\arraystretch}{1.5}
+\setlength{\arrayrulewidth}{0.4mm}
+\setlength{\tabcolsep}{10pt}
+
+\newlength{\myMheight}
+% Create the reference text for measures
+\settoheight{\myMheight}{M}
+
+
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+\makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
+
+
+\textbf{Driving Question}
+
+Air temperatures near the earth's surface result largely from an interplay of the sun's incoming energy and the absorption, reflection, and radiation of that energy by materials on the earth's surface.
+\begin{itemize}
+	\item What is the effect of the absorption, reflection, and radiation of the sun's energy by different materials on the earth's surface air temperatures? 
+	\item What are characteristics of materials that best reflect the sun's energy and that best absorb and radiate the sun's energy?
+\end{itemize}
+
+\textbf{Background}
+The air temperature near the earth's surface depends primarily on two things: the amount of energy provided by the sun and the amount of energy the earth is radiating. When these two factors are added together, the total energy is greatest shortly after the time of greatest sunlight intensity. On a sunny day with little wind, the greatest intensity of sunlight occurs around mid day. However, typically, the hottest part of the day generally occurs one to several hours later. 
+
+The amount of heat the earth's surface can absorb and subsequently radiate depends on the composition of the materials comprising the surface. Dark, rough materials absorb greater amounts of incoming solar radiation and therefore will radiate more energy. Conversely, light-colored, smooth materials reflect greater amounts of solar radiation and as a result have less energy to radiate. The reflectivity of a surface is its albedo. The higher the albedo, the more light is reflected and the less energy is absorbed.
+
+\textbf{Materials and Equipment}
+\begin{itemize}
+	\item Light sensor
+	\item Rod and clamp 
+	\item Temperature sensor
+	\item White sand, 500 g 
+	\item Dark sand, 500 g
+	\item White rock, 500 g
+	\item Dark rock, 500 g
+	\item Mass balance (1 per class)	
+ 	\item High intensity incandescent lamp (150 W)	
+	\item Large disposable plate
+	\item Tripod base and support rod
+	\item Small cardboard box, (20 cm)$^3$ or larger
+	\item Three-finger clamp
+	\item Tape
+	\item Paper and marking pen
+	\item Scissors
+\end{itemize}
+
+\textbf{Procedure}
+
+\textit{Part 1: Measuring reflection and radiation of sand and rock}
+\begin{enumerate}
+	\item Open \textit{SPARKvue} and build a page with one graph.
+	\item Connect the light sensor and temperature probe to the data collection system. 
+	\item Display a graph with both Temperature readings on the $y$-axis and Time on the $x$-axis. 
+	\item Put 500 g of white sand in a large plate.
+	\item Place the lamp on one side of the plate so it will shine down into it at about a $60^\circ$ angle. 
+	\item Mount the light sensor on the tripod base and rod stand, using the three-finger clamp. Position it on the other side of the plate, directly opposite the light and angled at approximately the same angle as the light source towards the plate.
+	\item Set up the temperature probe so it hangs about 1 cm above the surface of the sand.
+	\begin{center}
+\includegraphics[width=0.55\linewidth]{setup_1.jpg}
+\end{center}
+	\item Which material do you predict will have the greatest albedo? Which the least?
+	\answerspace{1.0in}
+	\item Which material do you predict will absorb the most heat from the light energy?
+	\answerspace{1.0in}
+	\item Which material do you predict will radiate the most heat after the light is turned off?
+	\answerspace{1.0in}
+	\item Are you measuring direct light or reflected light?
+	\answerspace{1.0in}
+	\item Turn on the light. 
+	\item After 30 seconds, start data recording.
+	\item After 60 seconds, turn the light off. Do not stop recording data.
+	\item Record data for an additional 180 seconds (for a total of 240 seconds).
+	\item Put the sand back into the container.
+	\item Name your data run.
+	\item Repeat this procedure for the remaining materials: dark sand, white rock, and dark rock. Note: Exercise care to keep the positions of the light, plate, temperature sensor, and light sensor constant throughout the testing of the four materials.
+	\item View the statistics for each graph, select the appropriate data points on each data run, and record the mean values that are called for in Table 1.	
+\begin{center}
+\begin{tabular}{| M{4.5cm} | M{4.5cm} | M{4.5cm} |} 
+ \hline
+ \multicolumn{3}{|c|}{Table 1: Reflection and radiation of sand and rock} \\ \hline
+ Material & Mean Reflected Light Intensity (W/m$^2$) & Change in Temperature (On$\rightarrow$Off) ($^\circ$C) \\ \hline
+White Sand & & \\[15pt] \hline
+Dark Sand & & \\[15pt] \hline
+White Rock & & \\[15pt] \hline
+Dark Rock & & \\[15pt] \hline
+\end{tabular}
+\newpage
+\end{center} 	
+	\item Sketch parameter (light intensity, temperature) versus time graphs of your data for the four experimental conditions. Label your four runs, the overall graphs, the $x$-axes, and the $y$-axes. Include units and scales on the axes.
+	\begin{center}
+\includegraphics[width=0.7\linewidth]{blank_graph.png}
+\end{center}
+		\begin{center}
+\includegraphics[width=0.7\linewidth]{blank_graph.png}
+\end{center}
+\end{enumerate}
+\newpage
+\textit{Part 2: Measuring sunlight intensity and the earth's reflectivity}
+\begin{enumerate}
+	\item Make an outdoor equipment station: Cut two holes in the bottom of a small cardboard box such that a light sensor will be held snuggly in one and a stainless steel temperature sensor will be held snuggly in the other.
+		\begin{center}
+\includegraphics[width=0.5\linewidth]{setup_2.jpg}
+\end{center}
+	\item Make sure your data collection system is fully charged. 
+	\item Connect the sensors and change the sample rate to 1 sample per minute.
+	\item Display both Light intensity and Temperature ($^\circ$C) on the $y$-axis of a graph 	with Time on the $x$-axis. 
+	\item Select the widest range on the light sensor. 
+	\item Make a portable experiment station
+	\begin{enumerate}[(a)]
+		\item Turn the box upside down
+		\item Thread the light and temperature sensors through the holes until they fit securely, and point straight up in the air. Use tape if necessary to help secure them.
+	\end{enumerate}
+	\item Make a sign that says: 
+
+		DO NOT DISTURB! EXPERIMENT IN PROGRESS. 
+
+		CONTACT: [YOUR NAME]. 
+
+		THIS EXPERIMENT IS BEING CONDUCTED FROM [DATE] [TIME] TO [DATE] [TIME].
+	\item Carry the portable experiment station, sign, and tape outside. Find a location with the following characteristics: 
+	\begin{itemize}
+		\item It is a safe place to leave the experiment station;
+		\item It will receive full sun all day with no shading;
+		\item It is not near (within 5 meters) a building or on pavement;
+		\item The box will not get wet from sprinklers.
+	\end{itemize}
+	\item What time of day do you predict the intensity of insolation will be the greatest?
+	\answerspace{0.8in}
+	\item What time of day do you predict the air temperature will be the greatest?
+	\answerspace{0.8in}
+	\item Start data recording. Record your starting time in Table 2.
+	\item Carefully enclose the data collection system inside the box using tape to hold the flaps closed. 
+	\item Place the box in the test location. Make sure the sensors are still pointing straight up.
+	\item Record data until late afternoon or evening. Then, stop data recording, save your experiment, and clean up according to your instructor's directions.
+	\item Find the coordinate values for the maximum temperature and light intensity on the graph, and complete Table 2. 
+	\begin{center}
+\begin{tabular}{| M{3.0cm} | M{1.5cm} | M{3.0cm} | M{3.0cm} | M{2.0cm} |} 
+ \hline
+ \multicolumn{5}{|c|}{Table 2: Reflection and radiation of sand and rock} \\  \hline
+& Start Time & Greatest Value & Seconds from Start When Maximum Occurred & Time of Day \\ \hline
+Light Intensity (lux) & & & & \\[15pt] \hline
+Temperature ($^\circ$C) & & & &\\[15pt] \hline
+\end{tabular}
+\end{center}
+	\item Sketch a parameter versus time graph of your data for the two experimental variables. Use a key to differentiate your two variables. Label the overall graph, the $x$-axis, the $y$-axis, and include units on your axes. 
+\begin{center}
+\includegraphics[width=0.7\linewidth]{blank_graph.png}
+\end{center}
+\end{enumerate}
+ \newpage
+\textbf{Analysis Questions}
+
+\textit{Part 1: Measuring reflection and radiation of sand and rock}
+\begin{enumerate}
+	\item Compare your predictions with your results.
+	\answerspace{2.0in}
+	\item What were the dependent variables in this experiment? The independent variable?
+	\answerspace{2.0in} 
+	\item Why were you careful to leave the same amount of space between each material and the light sensor, temperature sensor, and light source for each data collection?
+	\answerspace{2.0in}
+	\item Which characteristics of the materials make them good reflectors? 
+	\answerspace{1.0in}
+	\item What is the relationship between the magnitude of the albedo of the material and the final air temperature?
+	\answerspace{1.5in}
+	\item What happens to the light that is not reflected? What happens to this energy? How might this occurrence affect daily temperatures on the earth's surface?
+	\answerspace{2.0in}
+\end{enumerate}	
+\newpage
+\textit{Part 2: Measuring sunlight intensity and the earth's reflectivity}
+\begin{enumerate}
+	\item Does your data support your predictions? Explain.
+	\answerspace{2.5in}
+	\item Explain how the warmest temperature of the day could be in the late afternoon when the sun's greatest intensity is earlier in the day.
+	\answerspace{2.5in}
+\end{enumerate}
+\newpage
+\textbf{Synthesis Questions}
+
+Use available resources to help you answer the following questions.
+
+\begin{enumerate}
+	\item Discuss what happens to the energy in sunlight when it strikes surfaces that have a high albedo.
+	\answerspace{2.5in}
+	\item Discuss what happens to the energy in sunlight when it strikes surfaces that have a low albedo.
+	\answerspace{2.5in}
+	\item Explain how the warmest temperature of the year could be after the date when the sun's greatest intensity occurs.
+	\answerspace{2.5in}
+	\item What type of material would you use to make a solar heater for a swimming pool? Why?
+	\answerspace{2.5in}
+	\item What type of material would you use to make summer curtains for your home windows? Why?
+	\answerspace{2.5in}
+	\item You want to build a new home using energy efficient passive solar technology. Since you live in Columbus, Ohio, you want your house to be cool in the summer and warm in the winter. Answer the following questions:
+	\begin{enumerate}[(a)]
+		\item At latitudes above the Tropic of Cancer and below the Tropic of Capricorn, how does the angle of the sun change with the seasons? How would you use the difference to help you with the design of your new home?
+		\answerspace{2.5in}
+		\item What are two ways to enhance solar absorption in the winter?
+		\answerspace{2.5in}
+		\item What are two ways to reduce solar absorption in the summer?
+		\answerspace{2.5in}
+	\end{enumerate}
+\end{enumerate}
+
+\textbf{Multiple Choice Questions}
+
+Select the best answer or completion to each of the questions or incomplete statements below.
+\begin{enumerate}
+	\item Which of the following best quantifies how reflective a surface is?
+	\begin{enumerate}[A.]
+		\item Light intensity
+		\item Albedo
+		\item Absorption
+		\item Angle of incidence
+		\item Temperature
+	\end{enumerate}
+	\item Compared with a material with a high albedo, a material with a low albedo:
+	\begin{enumerate}[A.]
+		\item Absorbs more solar energy
+		\item Reflects more solar energy
+		\item Reflects less solar energy
+		\item Emits more infrared radiation
+		\item Both A and C 
+		\item Both B and D
+	\end{enumerate}
+\end{enumerate}
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

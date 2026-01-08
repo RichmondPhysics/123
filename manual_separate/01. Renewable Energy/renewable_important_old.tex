@@ -1,0 +1,184 @@
+\documentclass[english,twoside]{article}
+
+\input{../labmanual_formatting_commands} %all general latex packages, commands, and definitions now here.
+
+\begin{document}
+
+\Lab{1}{Renewable Energy: Why is it so Important?}
+
+\renewcommand{\arraystretch}{1.5}
+\setlength{\arrayrulewidth}{0.4mm}
+\setlength{\tabcolsep}{10pt}
+
+\newlength{\myMheight}
+% Create the reference text for measures
+\settoheight{\myMheight}{M}
+
+
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+\makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
+
+
+\textbf{Driving Question}
+
+We all use energy--to travel to school, to charge electronics, to turn on lights, and even to fill a cup with water. Where does this energy come from? Energy sources fall into two categories: non-renewable and renewable.
+
+Non-renewable energy comes from sources such as coal, natural gas, and petroleum, which are finite and cannot be replaced in a short time period. For example, all the petroleum we use today was formed hundreds of millions of years ago. Any petroleum we might try to make today would not be ready for millions of years. When used, non-renewable energy sources generate pollutants and contribute to climate change.
+
+Renewable energy sources, in contrast, are replenished in a short period of time. Solar, wind, and hydroelectric energy are considered renewable. In some places, the sunshine provides usable solar energy on most days. In other regions, the wind blows regularly, making it possible to reliably generate energy from the wind. If people live close to a large river, they may be able to use a dam to produce hydroelectric energy throughout the year. When renewable energy sources are used, they produce little to no pollution.
+
+In the United States in 2021, a majority of the energy consumed was generated using non-renewable resources.\footnote{US Energy Information Administration, September 2022, \textit{Monthly Energy Review}, Table 1.3: \url{www.eia.gov/totalenergy/data/browser/index.php?tbl=T01.03\#/?f=A}} The data in Figure \ref{US_energy_2021} represent energy consumed for the transportation, residential, commercial, and industrial sectors, as well as energy used for the production of electricity. Petroleum and natural gas were used to produce more than $60\%$ of the energy consumed.
+
+\begin{center}
+\begin{figure}[h]
+{\par\centering \includegraphics{US_energy_2021.png} \par}
+\caption{United States energy sources for all sectors, 2021} \label{US_energy_2021}
+\end{figure}
+\end{center}
+
+If you examine only the energy used to produce electricity in the United States in 2021, the distribution of sources is quite different; petroleum and natural gas account for less than $40\%$ of the energy consumed to produce electricity (see Figure \ref{US_electricity_2021}).\footnote{US Energy Information Administration, FAQ: What is US electricity generation by source? \url{www.eia.gov/tools/faqs/faq.cfm?id=427\&t=3}} The mixture of the sources of energy used to generate the electricity you use will vary depending on where you live.
+
+\begin{figure}
+{\par\centering \includegraphics{US_electricity_2021.png} \par}
+\caption{United States sources for electricity production, 2021} \label{US_electricity_2021}
+\end{figure}
+
+To produce electricity from a renewable or non-renewable source, energy must be converted from one form to another. For example, when you travel in a conventional car, the car is converting fossil fuel energy (gasoline) into the energies of motion and heat. If you heat up food on an electric stove, the stove converts electrical energy (which was converted from some other type of energy previously) into heat.
+
+In this experiment, you will examine how a light bulb converts electrical energy to light energy. Light bulbs are usually sold according to the amount of electrical power they consume. You will investigate the relationship between the power rating of a light bulb and the amount of light it produces.
+
+\textbf{Objectives}
+
+\begin{itemize}
+\item List examples of non-renewable and renewable energy sources and describe the differences between them.
+\item Learn about energy conversion.
+\item Gain familiarity with a light sensor and data-collection software.
+\item Calculate the reduction of carbon dioxide production when using renewable energy sources to generate electricity in place of non-renewable energy sources.
+\end{itemize}
+
+\textbf{Materials}
+
+\begin{itemize}
+\item Data collection system
+\item Temperature sensor
+\item Light Sensor
+\item Ring stand
+\item Utility clamp
+\item Tape
+\item 25 W, 60 W, and 100 W (or equivalent) bulbs 
+\item Large cardboard box
+\item Light bulb socket/Lamp	
+\end{itemize}
+
+\textbf{Consider}
+\begin{enumerate}
+	\item What job does a light bulb do? What are the unintended effects of turning on a light bulb?
+\answerspace{2.0in}
+
+ 	\item What energy transformations take place when electrical energy is applied to an incandescent light bulb? 
+\answerspace{2.0in}
+
+	\item What factors should be considered when comparing different kinds of light bulbs? 
+\answerspace{2.0in}
+\end{enumerate}
+
+\textbf{Investigate}
+ 
+\begin{enumerate}
+
+	\item Open \textit{SPARKvue} and select \textit{Build New Experiment}.
+	\item Select the single page layout and click the \textit{Graph} (\includegraphics[height=\myMheight]{graph.png}) icon.
+	\item Connect the wireless light sensor. To do so, click the Bluetooth icon at the top-right of the page and select the device that has the same ID number as the light sensor at your station. If you do not see your light sensor listed, double check that your sensor is on.
+	\item Place Illuminance (lux) on the $y$-axis on the graph.
+	\begin{center}	\includegraphics[width=0.40\textwidth]{renewable_important_setup.png}
+	\end{center}
+	\item Clamp a lamp fitted with a 25 W (or equivalent) bulb to one ring stand using a utility clamp.
+	\item Place the lamp and ring stand into a large box.
+	\item Securely tape the light sensor to the opposite inside corner of the box, so that ambient sensor is facing the bulb.
+	\item Turn on the lamp and close the box.
+	\item Start data collection.
+	\item After a minute or so, stop data collection. Choose $\displaystyle \Sigma$ from the \textit{Analyze} menu. Record the mean illuminance value in Table \ref{table_1}.
+
+	\item Turn off the lamp and allow the bulb to cool. \textbf{Caution:} The bulb may be very hot.
+
+	\item Once the bulb is cool to the touch, replace it with the 60 W (or equivalent) bulb. Repeat Steps 3--6.
+
+	\item When the bulb is cool to the touch, replace it with the 100 W (or equivalent) bulb. Repeat Steps 3--6.
+\end{enumerate}
+
+\begin{table}
+\centering
+\refstepcounter{table}
+\label{table_1}
+\begin{tabular}{ | M{1.6cm} | M{1.8cm} | M{4.0cm} | M{4.0cm} | M{1.6cm} | }
+ \hline
+ \multicolumn{5}{|c|}{Table \thetable} \\ \hline
+ Light bulb \newline \centering{(W)} & Illuminance \newline \centering{(lux)} & Bulbs needed for 9000 lux & Electricity usage for \newline 8 hr/day for 20 days \newline \centering{(kWh)} & {\centering{Cost\newline(\$)}} \\ \hline
+ & & & & \\[20pt] \hline
+ & & & & \\[20pt] \hline
+ & & & & \\[20pt] \hline
+\end{tabular}
+
+\end{table}
+
+\textbf{Processing the Data}
+\begin{enumerate}
+	\item Calculate the number of light bulbs needed to produce 9000 lux based on your experimental measurements. Perform this calculation for each wattage of bulb you tested, and record the results in Table \ref{table_1}.
+
+	\item In a typical classroom, lights are on for 8 hours/day for 20 days in a month. Based on the number of light bulbs needed for each wattage, calculate the total electricity usage in kilowatt-hours (kWh) to run the bulbs for 8 hours/day for 20 days, and record the results in Table \ref{table_1}. 
+
+	\item Use the electricity cost from your region to calculate the cost to run the bulbs for 8 hours/day for 20 days, and record the results in Table \ref{table_1}.\footnote{The average cost of electricity in 2022 in the United States was $0.15$ per kilowatt hour (kWh) (\url{www.eia.gov}). If you do not know the electricity cost for your region, you can use this value.
+  Source: \url{http://www.eia.gov/tools/faqs/faq.cfm?id=74&t=11}}
+\answerspace{1.3in} 
+\end{enumerate}
+
+\textbf{Analysis Questions}
+\begin{enumerate}
+	\item Which wattage of light bulb would you choose to use to create a light level of 9000 lux? Why?
+\answerspace{2.0in}
+
+	\item Determine the carbon dioxide production to generate electricity to light the light bulbs that you need to produce 9000 lux for 8 hours/day for 20 days. Perform calculations for the two types of fossil fuel in Table \ref{table_2}.
+
+\begin{table}[h]
+\centering
+\refstepcounter{table} % advance the table counter
+\label{table_2}
+\begin{tabular}{ | M{1.8cm} | M{1.6cm} | M{3.2cm} | M{2.6cm} | M{3.8cm} | }  
+ \hline
+ \multicolumn{5}{|c|}{Table \thetable} \\ \hline
+	Fossil fuel & Light bulb \newline \centering{(W)} & Electricity usage for \newline 8 hr/day for 20 days \newline \centering{(kWh)} & CO$_2$ production \newline \centering{(lbs CO$_2$/kWh)} & {CO$_2$ production from \newline energy production \newline \centering{(lbs)}} \\ \hline
+ \centering{Natural gas} & 25 & & 1.22 & \\[15pt] \hline
+ Natural gas & 60 & & 1.22  & \\[15pt] \hline
+ Natural gas & 100 & & 1.22  & \\[15pt] \hline
+ Coal & 25 & & 2.08 & \\[15pt] \hline
+ Coal & 60 & & 2.08  & \\[15pt] \hline
+ Coal & 100 & & 2.08  & \\[15pt] \hline
+ Wind & & & 0.03 & \\[15pt] \hline
+ Solar & & &  0.15 & \\[15pt] \hline
+\end{tabular}
+\end{table}
+
+	\item Electricity generation from non-renewable energy sources produces higher carbon dioxide levels than electricity generation from renewable energy sources. Determine how much carbon dioxide would be produced to light the bulbs for 8 hours/day for 20 days if you were to use wind or solar to produce electricity. How does this compare to the amount of carbon dioxide that would be produced if electricity was generated using natural gas as the energy source? 
+
+When performing your calculations, imagine your classroom is set up using the light bulb configuration that produces the least amount of carbon dioxide based on your data from the previous question. (Note: CO$_2$ production from wind and solar energy comes from manufacturing, transportation, and installation. Wind turbines and solar panels do not generate CO$_2$ while they are operating and generating electricity.)
+
+	\item	What are other ways you could reduce the amount of carbon dioxide produced when lighting your classroom?
+\answerspace{2.0in}
+\end{enumerate}
+
+\textbf{Extend}
+\begin{enumerate}
+	\item Some light bulbs have coatings to affect the quality of the light, making the light ``soft'', ``bright'', or ``daylight''. Using a selection of light bulbs with the same wattage rating, compare light levels. 
+
+	\item	Use a temperature probe and an equipment setup similar to the setup for this experiment to investigate the relationship between the energy a bulb consumes and the amount of energy that is converted to heat. Compare different wattage values for the same type of bulb as well as different types of light bulbs, such as LED and compact fluorescent light bulbs.
+\begin{comment}
+	\item	Research the mix of energy sources that are used to produce electricity in your region. Are renewable options available?
+ 
+	\item	Research the environmental impact associated with producing and disposing of different types of light bulbs. You can also examine cost and expected lifetime of different types of bulbs. Write a letter to your school or family making recommendations for replacing the light bulbs in your classroom or house.
+\end{comment}
+\end{enumerate}
+
+\end{document}
+

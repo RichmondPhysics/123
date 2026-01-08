@@ -1,0 +1,103 @@
+\documentclass[english,twoside]{article}
+
+\input{../labmanual_formatting_commands} %all general latex packages, commands, and definitions now here.
+
+\begin{document}
+
+\Lab{27}{Power and Energy}
+
+\renewcommand{\arraystretch}{1.5}
+\setlength{\arrayrulewidth}{0.4mm}
+\setlength{\tabcolsep}{10pt}
+
+\newlength{\myMheight}
+% Create the reference text for measures
+\settoheight{\myMheight}{M}
+
+
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+\makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
+
+\textbf{Driving Question}
+
+How are power and energy related to voltage and current? What is the difference between power and energy?
+
+Power and energy are closely related but describe different ideas. Energy is the total amount of work that can be done or has been done---it represents the capacity to cause change. Power describes how quickly that energy is transferred or converted from one form to another.
+
+In electrical systems, power depends on both voltage and current. Voltage represents the electrical ``push'' that drives charges through a circuit, while current is the flow of those charges. Together, they determine how rapidly electrical energy is delivered or used.
+
+A wind turbine converts mechanical energy from moving air into electrical energy using electromagnetic induction. The spinning blades drive a small generator that produces a voltage, and when connected to a circuit, current flows through the load. The electrical power produced tells us how rapidly the turbine is converting wind energy into electrical form.
+
+Energy and power are measured in related units. Energy is measured in joules (J), while power, the rate of energy conversion, is measured in joules per second, also known as watts (W). Because our turbine produces relatively little power, we will measure it in milliwatts (mW), where one milliwatt is one-thousandth of a watt.
+
+\textbf{Materials}
+\begin{itemize}
+	\item Wind turbine
+	\item Voltage sensor with red and black banana plug leads
+	\item Current sensor with red and black banana plug leads
+	\item Alligator clip adapters (2, black)
+	\item Alligator clip leads (2, black and green)
+	\item Box fan, 3 or more speeds (same fan as previous activity, with tape)
+	\item 33-$\Omega$ resistor
+	\item Textbooks for weight (2)
+\end{itemize}
+
+\textbf{Safety}
+
+\begin{itemize}
+	\item Wear safety goggles throughout the experiment.
+	\item Tie back long hair, remove dangling jewelry, secure loose clothing, and roll up long sleeves.
+	\item Always make sure blades are properly inserted in the turbine and screws are secure before turning on the fan.
+\end{itemize}
+
+\textbf{Investigate}
+\begin{enumerate}
+	\item Open \textit{SPARKvue} and build a page with one graph.
+	\item Connect the wireless voltage and current sensors. 
+	\item Set the Sampling Rate to 1 kHz.
+	\item On the $y$-axis, click Measurement and select the User-entered tab from the menu. Then, select Create/Edit Calculation.
+	\item Type the following equation inside the text box exactly as shown, including capital letters and spacing:
+\begin{equation*}
+	\text{POWER}=
+\end{equation*}
+	\item With the cursor still in the text box, select the orange Measurements button in the keypad display. Select Current. Choose the Measurements button again and select Voltage. Your equation should now look like this:
+\begin{equation*}
+	\text{POWER}=[\text{Current}][\text{Voltage}]
+\end{equation*}
+	\item Use the keypad display to add $*1000$ to the equation. Your equation should look like this: 
+\begin{equation*}
+	\text{POWER}=[\text{Current}][\text{Voltage}]*1000
+\end{equation*}
+	\item In the Units column, type mW.
+	\item The calculated measurement POWER (mW) should now appear on the $y$-axis of the graph.
+	\item Assemble the turbine according to the optimal fan distance, blade length, blade pitch, leaf logo facing the fan, and number of blades found in a previous activity. Add textbooks to the base.
+	\item Attach alligator clip leads to the motor terminals. Assemble the voltage sensor, current sensor, and resistor as shown below.
+	{\par\centering \includegraphics[width=0.6\linewidth]{turbine_connections.jpg} \par}
+ 	\item Turn on the fan to the optimum speed. Wait for the turbine to reach full speed.
+	\item Start collecting data.
+	\item Stop collecting data after two minutes.
+	\item Turn the fan off.
+	\item Sketch the results in the graph. Include numbers and labels with units for both axes.
+
+{\par\centering \includegraphics{blank_graph.png} \par}
+
+\end{enumerate}
+ 
+\textbf{Analyze}
+\begin{enumerate}
+	\item Open Graph Tools. Under Statistics Tools, select Area. The area under the curve is the total energy produced by the wind turbine in two minutes. How much energy did your wind turbine produce?
+	\answerspace{1.5in}
+	\item If you collected data over three minutes, which would stay the same: energy or power? Explain your answer.
+	\answerspace{1.5in}
+	\item Return to the graph to draw your prediction of how power might change if you collected data outdoors instead of indoors with a fan. Use Help (?) if you are not familiar with the prediction tool. Explain your prediction in the space provided.
+	\answerspace{2.0in}
+\end{enumerate}
+ 
+\textbf{Extend}
+\begin{enumerate}
+	\item Design and conduct an experiment to produce the same amount of energy with the turbine at a different power.
+\end{enumerate}
+\end{document}
+

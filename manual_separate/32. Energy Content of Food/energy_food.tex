@@ -1,0 +1,128 @@
+\documentclass[english,twoside]{article}
+
+\input{../labmanual_formatting_commands} %all general latex packages, commands, and definitions now here.
+
+\begin{document}
+
+\Lab{32}{Energy Content of Food}
+
+\renewcommand{\arraystretch}{1.5}
+\setlength{\arrayrulewidth}{0.4mm}
+\setlength{\tabcolsep}{10pt}
+
+\newlength{\myMheight}
+% Create the reference text for measures
+\settoheight{\myMheight}{M}
+
+
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+\makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
+
+
+\textbf{Driving Question}
+
+Which type of foods contain the most energy per gram?
+
+\textbf{Background}
+
+Plants use photosynthesis to convert the sun's energy into chemical bond energy stored in carbohydrates, proteins, and fats. Energy from chemical bonds is released during respiration, which is very similar to combustion or burning reactions. Respiration occurs more slowly than combustion because it is controlled by enzymes, but the reactions are essentially the same.
+
+\begin{equation*}
+	\text{carbon based fuel} + \text{O}_2 \rightarrow \text{CO}_2 + \text{H}_2 \text{O} + \text{energy}
+\end{equation*}
+
+Calorimetry is a method used to calculate energy released based on heat exchange during a chemical reaction. You will burn different kinds of food and calculate the amount of energy released based on temperature change in water. Energy released by the burning food is equal to the energy absorbed by the water and the surrounding environment. 
+
+\textbf{Materials}
+\begin{itemize}
+	\item Temperature sensor	
+	\item Aluminum cans (2)
+	\item Aluminum Foil	
+	\item Centigram Balance
+	\item Graduated cylinder, 100-mL	
+	\item Ring stand
+	\item Rod or other attachment	
+	\item Large paper clips (2)
+	\item Cardboard Square (10 cm $\times$ 10 cm)	
+	\item Whole cashew or peanut (1)
+	\item Large marshmallow (1)	
+	\item Matches
+	\item Tape	
+	\item Wooden Splint (3)
+\end{itemize}
+
+\textbf{Safety}
+
+Follow these important safety precautions in addition to your regular classroom procedures:
+\begin{itemize}
+	\item Use appropriate caution with burning and hot materials, such as matches, starter wands, and foods.
+	\item Conduct the lab in a well-ventilated area, preferably outside or under a ventilated hood.
+\end{itemize}
+
+\textbf{Procedure}
+\begin{enumerate}
+	\item Put on your safety goggles.
+	\item Open \textit{SPARKvue} and build a page with one graph. 
+	\item Connect the temperature sensor.
+	\item Display Temperature on the $y$-axis of the graph.
+	\item Set the Sampling Rate to 1 Hz.  
+	\item Use a paperclip, cardboard, and tape to construct a food stand similar to the diagram. Cover the cardboard with foil.
+	\item Tape the wooden splint to the sensor so the stick extends ~1 cm past the metal shaft.
+	\item Rinse a can with water. Fill it with 100 mL of water. Place the temperature sensor in the can. Ensure the sensor tip contacts only water for greater accuracy.
+	\item Place the nut in the foil stand as illustrated and record the combined mass of the nut and stand.
+	\item Use a paper clip to suspend the can so that it hangs above the food stand.
+	\item Place the foil stand under the can. Adjust the can height so that, once the food is lit, the flame will be 2-3 cm below the bottom of the can.
+	\item Start collecting data. 
+	\item Ignite the food. Use a wooden splint to light the nut from the bottom, and move the foil stand slightly if needed to center the flame beneath the can. 
+	\item Stop collecting data when the nut completely loses its flame.
+	\item Remove the temperature sensor from the can and dry it.
+	\item Record the combined mass of the nut and stand after burning, then dispose of the nut remains.	
+	\item What changes are visible on the can after burning the nut? 
+	\item Discard the can.
+	\item Repeat the experiment with a new can and a marshmallow.
+	\item What changes are visible on the can after burning the marshmallow?
+\end{enumerate}
+
+\textbf{Analysis}
+\begin{enumerate}
+	\item Use Show Statistics to get the minimum and maximum temperatures. Record these values in the table.
+	\item Repeat with the marshmallow run.
+	\item Calculate the change in temperature $\Delta T$ of the water for each food.
+	\item Calculate the change in mass $\Delta m$ of each food.
+	\item Calculate the energy content per gram of food using the following formula
+	\begin{equation*}
+		e = \frac{m_w c_w \Delta T}{\Delta m},
+	\end{equation*}
+	where $m_w = 100$ g is the mass of the water and $c_w = 1$ cal$\cdot$g$^\circ$ is the specific heat of water. (Using these values, the energy content per gram has units of calories/gram.) 
+\begin{center}
+\begin{table}[h] 
+\caption{Mass, temperature, and energy data for food samples}
+\begin{tabular}{ | M{2.5cm} | M{2.0cm} | M{2.0cm} | M{1.5cm} | M{1.5cm} | M{2.2cm} |} 
+ \hline
+ Food & Initial Mass (g) & Final Mass (g) & $\Delta m$ (g) & $\Delta T$ ($^\circ$C) & e (cal/g) \\ \hline
+ Peanut & & & & & \\[15pt] \hline
+ Marshmallow & & & & & \\[15pt] \hline
+& & & & & \\[15pt] \hline
+& & & & & \\[15pt] \hline
+\end{tabular}
+\end{table}
+\end{center}	
+					
+	\item	What happens to the mass that appears to be lost during burning? Use observations from your experiment to support this claim.
+	\answerspace{1.5in}
+
+	\item Which type of food contains more energy per gram: a fat (nut) or carbohydrate (marshmallow)? Use multiple lines of evidence from your experiment to support your answer.
+	\answerspace{2.5in}
+
+	\item Explain why the energy content per gram that you calculated might be higher or lower than the true energy content of the food. 
+	\answerspace{2.0in}
+
+	\item Do the structural differences between fat and carbohydrate molecules support your answer to the pervious question? Why or why not?
+	\answerspace{2.5in}
+
+	\item Summarize the flow of energy from the sun to the energy in your body.
+
+\end{enumerate}
+\end{document}

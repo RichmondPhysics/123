@@ -1,0 +1,156 @@
+\documentclass[english,twoside]{article}
+
+\usepackage{paracol}
+
+\input{../labmanual_formatting_commands} %all general latex packages, commands, and definitions now here.
+
+\begin{document}
+
+\Lab{30}{Hydroelectricity}
+
+\renewcommand{\arraystretch}{1.5}
+\setlength{\arrayrulewidth}{0.4mm}
+\setlength{\tabcolsep}{10pt}
+
+\newlength{\myMheight}
+% Create the reference text for measures
+\settoheight{\myMheight}{M}
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+\makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
+
+\textbf{Driving Question}
+
+Hydroelectric power plants like the Hoover Dam produce electricity from the flow of the water through the dam. Once the water reaches the turbines of the Hoover Dam, it is traveling at about 38 meters per second (85 mph). Given that the entire flow of the Colorado River goes through the Hoover Dam, that ow contains a lot of kinetic energy. The water gets this kinetic energy because of a drop in elevation from the reservoir to the outlet. This drop in height converts the water's potential energy into kinetic energy. The difference in the height of the water is known as the head.
+
+The water is also sped up by forcing the flow through a smaller opening, similar to the effect when you place a finger over a faucet or hose. What you are doing is decreasing the area of the flow of the water, and to make up for the decrease in area, the water flows faster (in keeping with the law of conservation of mass). By combining the two effects, narrowing the cross-section through which the water flows and increasing the energy transfer from potential to kinetic, the Hoover Dam was designed to generate a maximum of 2,080 megawatts of power.
+
+\textbf{Materials}
+\begin{itemize}
+	\item Energy Transfer - Generator Assembly 
+	\item Voltage sensor with red and black banana plug leads
+	\item Current sensor with red and black banana plug leads
+	\item Alligator clip adapters (2, black)
+	\item Alligator clip leads (2, black and green)
+	\item Energy Transfer - Hydro Accessory  
+	\item 100-$\Omega$ resistor
+	\item Plug with Red/Green Light Emitting Diode (LED)
+	\item Beaker or container to collect water
+	\item Stop watch
+\end{itemize} 
+
+\textbf{Safety}
+\begin{itemize}
+	\item Wear safety goggles throughout the experiment.
+	\item To avoid the risk of shock or electrical injury, do not allow the Generator, resistor or banana plugs, sensors, or other electrical equipment to become wet. Keep water away from all electrical devices and wires. Always follow standard electrical safety precautions in your classroom.
+\end{itemize}
+
+\textbf{Investigate}
+	\begin{enumerate}	
+	\item Mount an empty Water Reservoir to a rod stand with fingered clamp. 
+	\item Connect a piece of clamped tubing from the bottom hose fitting on the Water Reservoir to a nozzle.
+	\end{enumerate}
+	\begin{minipage}[t]{0.57\textwidth}
+	\vspace{0pt}
+	\begin{enumerate}
+	\item Insert the pointed end of a plastic nozzle into the spring clip in the turbine housing. Note: The clip can turn to adjust where the water stream from the nozzle hits the turbine. To increase the water flow, cut or trim the nozzle end.
+	\item Connect the nozzle to a piece of tubing connected to an external water supply. Note: Have a beaker or container below the housing to collect water exiting the turbine.
+	\item Run the water supply through the nozzle of the turbine and watch the turbine spin.
+	\item Open \textit{SPARKvue} and build a page with two graphs.
+	\item Connect the wireless voltage and current sensors.
+	\item Display Voltage (V) on the $y$-axis of one graph and Current (mA) on the $y$-axis of the other graph.
+	\item For demonstration: Insert the plug with the light-emitting diode (LED) into the banana jacks and watch the LED light as you turn the generator. The red/green light diode shows that the generator produces an AC voltage.
+	\item Insert the 100-$\Omega$ resistor plug into the banana jacks
+	\item Connect banana plugs from a Voltage Sensor into the resistor plug.
+	\item Fill the Water Reservoir with about 700 mL of water. Prepare to measure the mass of the water that flows by one of two methods:
+	\begin{enumerate}[(a)]
+		\item Place a beaker underneath the Hydro Accessory to catch the water exiting the turbine during the experiment. Weigh the water in the beaker. OR	
+		\item Read the volume in the Water Reservoir (graduated cylinder) before and after data collection. Use the volume to calculate the mass.
+	\item In \textit{SPARKvue}, click the Start button. Open the clamp to the bottom tube to allow water to run through the turbine. In a display, measure the voltage and/or current, and power.
+	\item Record the mass of the water.
+	
+	\end{enumerate}
+\end{enumerate}
+\end{minipage}\hfill
+	\begin{minipage}[t]{0.37\textwidth}
+	\vspace{0pt}
+\includegraphics[width=\linewidth]{setup_1.jpg}\\[1em]
+\includegraphics[width=\linewidth]{setup_2.jpg}
+	\end{minipage}
+
+\begin{enumerate}[start=11]
+	\item Repeat the procedure above changing the water height and nozzle. Take one run with the Water Reservoir as its highest point on the rod stand. Then take another run of data with the same amount of water through the turbine, but with the reservoir at half the height. Be careful not to change the nozzle angle, etc. Using the buret clamp will help. Compare the power total and efficiency (percent of energy transferred) for the two heights, etc.
+\end{enumerate}
+ \newpage
+\textbf{Data collection}
+
+\begin{center}
+\begin{tabular}{ | M{1.2cm} | M{1.0cm} | M{1.0cm} | M{1.0cm} | M{1.0cm} | M{1.0cm} | M{1.0cm} | M{1.5cm} |}
+ \hline
+	\multicolumn{8}{|c|}{Table 1: Results} \\ \hline
+	Trial \# & Height (m) &  $\Delta m/\Delta t$ (kg/s) & $P_t$ (W) & Voltage (V) & Current (mA) & Power (mW) & Efficiency \\ \hline
+1 & & & &  & & &  \\[15pt] \hline
+2 & & & &  & & &  \\[15pt] \hline
+3 & & & &  & & &  \\[15pt] \hline
+4 & & & &  & & &  \\[15pt] \hline
+5 & & & &  & & &  \\[15pt] \hline
+6 & & & &  & & &  \\[15pt] \hline
+\end{tabular}
+\end{center}
+
+\begin{enumerate}
+	\item	Determine the average height through which the water falls to calculate the following: 
+\begin{equation*}
+	h = \frac{h_\text{top}+h_\text{bottom}}{2}-h_\text{nozzle} ,
+\end{equation*}
+where $h$ is the average water height, $h_\text{top}$ is the highest point of the water level in the cylinder, $h_\text{bottom}$ is the bottom of the cylinder, and $h_\text{nozzle}$ is the level of the water in the nozzle. Enter your answers in Table 1.
+
+	\item Calculate the mass flow rate ($\Delta m/\Delta t$) and the theoretical power your turbine should generate, $P_t = (\Delta m/\Delta t)gh$. Enter your answers in Table 1.
+
+	\item Calculate the efficiency of the turbine for each case. Enter your answers in Table 1.
+\end{enumerate}
+ 
+\textbf{Analyze}
+\begin{enumerate}
+	\item Review your results. What can you conclude about the voltage produced as related to the height of the water?
+	\answerspace{2.0in}
+	\item You wish to design an energy-efficient house. The city that the house is located in has been chosen by the government as a site for a small hydroelectric power plant and dam. After analyzing the small river, three possible locations are found to be suitable for the dam and hydroelectric water plant. The city has enlisted your help to determine where to place the dam and hydroelectric power plant. The table below provides specific details of each location. Use this information to help the city determine the best location to place a hydroelectric power plant. 
+
+\begin{center}
+\begin{tabular}{ | M{1.6cm} | M{2.5cm} | M{2.5cm} | M{2.5cm} | M{2.5cm} |}
+ \hline
+ & Water head possible after dam placed (m) & Average velocity of flowing water (m/s) & Cross-sectional area of water flow (m$^2$) & Cost of building dam (\$) \\ \hline
+Location 1 & 1.75 & 2.1 & 7.4 & 74,000 \\[15pt] \hline
+Location 2 & 1.90 & 1.8 & 8.4 & 84,000 \\[15pt] \hline
+Location 3 & 1.50 & 1.9 & 7.8 & 78,000 \\[15pt] \hline
+\end{tabular}
+\end{center}
+
+	\begin{enumerate}[(a)]
+		\item Using information in the table, calculate the volumetric flow rate, $Q = \Delta V/\Delta t$, at each location.
+	\answerspace{1.5in}
+		\item The mass flow rate of a flowing fluid can be calculated using the equation 
+	\begin{equation*}
+		\frac{\Delta m}{\Delta t} = \rho Q ,
+	\end{equation*} 
+	where $Q$ is the volumetric flow rate and $\rho$ is the density of the fluid (the density of water is 1000 kg/m$^3$). Calculate the mass flow rate at each location.
+	\answerspace{3.0in}
+	\item Calculate the power that the water could theoretically produce at each location.
+	\answerspace{3.0in}  
+	\item If the turbines to be used at the power plant have an operating efficiency of 91.4\% what is the actual power that will be generated at each location?
+	\answerspace{2.0in}
+	\item Calculate how much energy (in kWh) this turbine would produce in one year at each location?
+	\answerspace{2.0in}
+	\item If the hydroelectric power plant takes 150,000 kWh a year to operate and this energy is produced at the plant, how much energy would be left over for your neighbors and yourself to use at each location?
+	\answerspace{2.0in}
+	\item The government would like to have the plant produce at least 6500kW-hours of energy each year for the town's 300 residents. Based on cost and performance, at which location would your group recommend the dam be built? Explain why.
+	\answerspace{2.0in}
+	\item Typical coal power plants can produce about 2 kWh of energy per kg of coal burned. How much coal must be burned to produce 6500 kWh of energy for the town's 300 residents? If 1 kg is equal to 2.2 pounds, how many pounds of coal are burned in one year to produce 6500 kWh of energy for 300 people?
+	\answerspace{2.0in}
+	\item Why would you recommend the government to build a hydroelectric dam to power this city? How would the dam affect the individuals and the environment? Write a short persuasion piece to help the government understand the advantages of a hydroelectric dam in this area. 
+	\answerspace{3.0in}
+\end{enumerate}
+\end{enumerate}
+
+\end{document}
