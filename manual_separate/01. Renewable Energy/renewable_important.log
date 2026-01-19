@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.7)  14 JAN 2026 10:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.7)  19 JAN 2026 15:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -886,14 +886,14 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 <graph.png, id=40, 28.60687pt x 28.60687pt>
 File: graph.png Graphic file (type png)
 <use graph.png>
-Package pdftex.def Info: graph.png  used on input line 94.
+Package pdftex.def Info: graph.png  used on input line 97.
 (pdftex.def)             Requested size: 6.88847pt x 6.88875pt.
 
 [3{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc} <./graph.png>]
-<renewable_important_setup.png, id=57, 201.75375pt x 136.25906pt>
+<renewable_important_setup.png, id=56, 201.75375pt x 136.25906pt>
 File: renewable_important_setup.png Graphic file (type png)
 <use renewable_important_setup.png>
-Package pdftex.def Info: renewable_important_setup.png  used on input line 110.
+Package pdftex.def Info: renewable_important_setup.png  used on input line 113.
 
 (pdftex.def)             Requested size: 194.76108pt x 131.53697pt.
 
@@ -902,14 +902,8 @@ Package pdftex.def Info: renewable_important_setup.png  used on input line 110.
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
-
-Package rerunfilecheck Warning: File `renewable_important.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `renewable_important.out':
-(rerunfilecheck)             Before: B963E186B0A73FC7A8804984EBCB84D2;267
-(rerunfilecheck)             After:  ED9680B192B9D2CA059D0B7BB204B02F;266.
+Package rerunfilecheck Info: File `renewable_important.out' has not changed.
+(rerunfilecheck)             Checksum: ED9680B192B9D2CA059D0B7BB204B02F;266.
  ) 
 Here is how much of TeX's memory you used:
  18737 strings out of 467871
@@ -918,7 +912,7 @@ Here is how much of TeX's memory you used:
  47138 multiletter control sequences out of 15000+600000
  686323 words of font info for 137 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 80i,12n,82p,1018b,769s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,12n,82p,1018b,761s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/M
 iKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/pub
 lic/lm/lmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/
@@ -928,7 +922,7 @@ r7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Program File
 s/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX/fonts/type1/
 public/lm/lmri8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmro10.pfb><
 C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt8.pfb>
-Output written on renewable_important.pdf (8 pages, 508249 bytes).
+Output written on renewable_important.pdf (8 pages, 508290 bytes).
 PDF statistics:
  190 PDF objects out of 1000 (max. 8388607)
  46 named destinations out of 1000 (max. 500000)

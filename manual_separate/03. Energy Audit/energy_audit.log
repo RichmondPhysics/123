@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.7)  7 JAN 2026 14:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.7)  19 JAN 2026 15:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -891,22 +891,22 @@ Package rerunfilecheck Info: File `energy_audit.out' has not changed.
 (rerunfilecheck)             Checksum: EAFEC7CC99A747BD125827AD6C724E3F;106.
  ) 
 Here is how much of TeX's memory you used:
- 18656 strings out of 467871
- 302883 string characters out of 5428435
+ 18660 strings out of 467871
+ 303067 string characters out of 5428435
  772774 words of memory out of 5000000
  47108 multiletter control sequences out of 15000+600000
- 676284 words of font info for 119 fonts, out of 8000000 for 9000
+ 676367 words of font info for 120 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 80i,11n,82p,1011b,648s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,11n,82p,1011b,656s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/M
 iKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/pub
 lic/lm/lmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Pr
 ogram Files/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Program Files/MiKTeX/font
 s/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmro1
 0.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt8.pfb>
-Output written on energy_audit.pdf (8 pages, 250782 bytes).
+Output written on energy_audit.pdf (8 pages, 251947 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 31 named destinations out of 1000 (max. 500000)
+ 124 PDF objects out of 1000 (max. 8388607)
+ 33 named destinations out of 1000 (max. 500000)
  29198 words of extra memory for PDF output out of 29859 (max. 10000000)
 
