@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.7)  2 FEB 2026 13:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.7)  3 FEB 2026 13:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -903,7 +903,7 @@ Package rerunfilecheck Info: File `what_electricity.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  18602 strings out of 467871
- 302353 string characters out of 5428435
+ 302351 string characters out of 5428435
  777811 words of memory out of 5000000
  47058 multiletter control sequences out of 15000+600000
  664283 words of font info for 99 fonts, out of 8000000 for 9000
@@ -914,7 +914,7 @@ iKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/pub
 lic/lm/lmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/
 Program Files/MiKTeX/fonts/type1/public/lm/lmro10.pfb><C:/Program Files/MiKTeX/
 fonts/type1/public/lm/lmsy10.pfb>
-Output written on what_electricity.pdf (5 pages, 311718 bytes).
+Output written on what_electricity.pdf (5 pages, 311691 bytes).
 PDF statistics:
  131 PDF objects out of 1000 (max. 8388607)
  49 named destinations out of 1000 (max. 500000)
