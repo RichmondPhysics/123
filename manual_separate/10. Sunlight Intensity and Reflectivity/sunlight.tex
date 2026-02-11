@@ -10,9 +10,9 @@
 \setlength{\arrayrulewidth}{0.4mm}
 \setlength{\tabcolsep}{10pt}
 
-\newlength{\myMheight}
+%\newlength{\myMheight}
 % Create the reference text for measures
-\settoheight{\myMheight}{M}
+%\settoheight{\myMheight}{M}
 
 
 
@@ -30,6 +30,7 @@ Air temperatures near the earth's surface result largely from an interplay of th
 \end{itemize}
 
 \textbf{Background}
+
 The air temperature near the earth's surface depends primarily on two things: the amount of energy provided by the sun and the amount of energy the earth is radiating. When these two factors are added together, the total energy is greatest shortly after the time of greatest sunlight intensity. On a sunny day with little wind, the greatest intensity of sunlight occurs around mid day. However, typically, the hottest part of the day generally occurs one to several hours later. 
 
 The amount of heat the earth's surface can absorb and subsequently radiate depends on the composition of the materials comprising the surface. Dark, rough materials absorb greater amounts of incoming solar radiation and therefore will radiate more energy. Conversely, light-colored, smooth materials reflect greater amounts of solar radiation and as a result have less energy to radiate. The reflectivity of a surface is its albedo. The higher the albedo, the more light is reflected and the less energy is absorbed.
@@ -107,14 +108,27 @@ Dark Rock & & \\[15pt] \hline
 \newpage
 \textit{Part 2: Measuring sunlight intensity and the earth's reflectivity}
 \begin{enumerate}
-	\item Make an outdoor equipment station: Cut two holes in the bottom of a small cardboard box such that a light sensor will be held snuggly in one and a stainless steel temperature sensor will be held snuggly in the other.
+	\item Make an outdoor equipment station: Cut one holes in the bottom of a small cardboard box such that a stainless steel temperature sensor will be held snuggly in it.
 		\begin{center}
 \includegraphics[width=0.5\linewidth]{setup_2.jpg}
 \end{center}
-	\item Make sure your data collection system is fully charged. 
-	\item Connect the sensors and change the sample rate to 1 sample per minute.
-	\item Display both Light intensity and Temperature ($^\circ$C) on the $y$-axis of a graph 	with Time on the $x$-axis. 
-	\item Select the widest range on the light sensor. 
+	\item Set up remote logging
+	\begin{enumerate}
+	\item Open SPARKvue, or select Main Menu and select Start New Experiment.	
+	\item Click Remote Logging	
+	\item Turn on the sensor. In the list of available devices, click the sensor which matches your sensor's device ID.	
+	\item Configure remote logging for each sensor: 
+\begin{enumerate}
+	\item Select a sensor to configure from the Sensor menu.
+	\item Toggle Sensor Enabled to ON.
+	\item Set the Sample Rate using the left and right arrows to 1 sample per minute. Make sure your data collection system is fully charged. Toggle Common Sample Rate to Off to set different sample rates for each sensor.
+	\item Optional: Toggle Sensor Button Deferred Logging to On to make the sensor wait to begin data logging until you press the sensor's power button. Data logging begins immediately after you click OK, or after you press the power button on the sensor if you selected Sensor Button Deferred Logging. The Bluetooth Status LED blinks yellow and green until data logging begins. When the sensor starts logging data, the Bluetooth Status LED blinks yellow.
+\end{enumerate}	
+\end{enumerate}		 
+	 
+
+%	\item Display both Light intensity and Temperature ($^\circ$C) on the $y$-axis of a graph 	with Time on the $x$-axis. 
+%	\item Select the widest range on the light sensor. 
 	\item Make a portable experiment station
 	\begin{enumerate}[(a)]
 		\item Turn the box upside down
@@ -152,12 +166,13 @@ Light Intensity (lux) & & & & \\[15pt] \hline
 Temperature ($^\circ$C) & & & &\\[15pt] \hline
 \end{tabular}
 \end{center}
+\newpage
 	\item Sketch a parameter versus time graph of your data for the two experimental variables. Use a key to differentiate your two variables. Label the overall graph, the $x$-axis, the $y$-axis, and include units on your axes. 
 \begin{center}
 \includegraphics[width=0.7\linewidth]{blank_graph.png}
 \end{center}
 \end{enumerate}
- \newpage
+ 
 \textbf{Analysis Questions}
 
 \textit{Part 1: Measuring reflection and radiation of sand and rock}
