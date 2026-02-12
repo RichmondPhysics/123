@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.9)  11 FEB 2026 16:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.9)  12 FEB 2026 10:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -883,6 +883,23 @@ File: setup_2.jpg Graphic file (type jpg)
 Package pdftex.def Info: setup_2.jpg  used on input line 113.
 (pdftex.def)             Requested size: 230.95505pt x 172.98029pt.
  [5 <./setup_2.jpg>]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.165 Light Intensity (Wm^
+                          {-2}) & & & & \\[15pt] \hline
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.165 Light Intensity (Wm^{-2}) &
+                                  & & & \\[15pt] \hline
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
 Overfull \hbox (0.57787pt too wide) in paragraph at lines 161--168
  [] 
  []
@@ -915,7 +932,7 @@ Program Files/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Program Files/MiKTeX/fo
 nts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/l
 mro10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Program
  Files/MiKTeX/fonts/type1/public/lm/lmsy7.pfb>
-Output written on sunlight.pdf (12 pages, 295273 bytes).
+Output written on sunlight.pdf (12 pages, 296107 bytes).
 PDF statistics:
  213 PDF objects out of 1000 (max. 8388607)
  87 named destinations out of 1000 (max. 500000)
